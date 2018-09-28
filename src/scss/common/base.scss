@@ -1,0 +1,35 @@
+// Base styles                                     |
+// - - - - - - - - - - - - - - - - - - - - - - - - |
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body,
+html {
+  margin: 0;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: $font-raleway;
+  letter-spacing: normal;
+  overflow: hidden;
+}
+
+* {
+  word-wrap: break-word;
+}
+
+*,
+::after, ::before {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
