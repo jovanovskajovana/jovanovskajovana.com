@@ -8,7 +8,6 @@ square.addEventListener('webkitAnimationEnd',function( event ) {
 
 
 document.addEventListener("scroll", function() {
-  console.log("im in");
   // var navbar = querySelector(".navbar");
   // navbar.classList.add("bg-white");
 });
