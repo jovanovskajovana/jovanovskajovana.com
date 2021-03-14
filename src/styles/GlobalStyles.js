@@ -86,7 +86,8 @@ const GlobalStyles = createGlobalStyle`
     background: #f95b5b;
   }
 
-  img {
+  img,
+  video {
     max-width: 100%;
   }
 

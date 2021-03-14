@@ -1,5 +1,7 @@
 import React from 'react'
 
+import video from '../assets/images/video.mp4'
+
 import SEO from '../components/SEO'
 import WavesLeft from '../components/figures/WavesLeft'
 import WavesRight from '../components/figures/WavesRight'
@@ -13,8 +15,18 @@ import {
   SectionThree,
   SectionFour,
   SectionFive,
+  SectionSix,
 } from '../styles/ContentLayout'
-import { TitleXXL, TitleXL, TextL, TitleM, TextM, TextS, TextXS } from '../styles/Typography'
+import {
+  TitleXXL,
+  TitleXL,
+  TitleL,
+  TitleM,
+  TextL,
+  TextM,
+  TextS,
+  TextXS,
+} from '../styles/Typography'
 
 const HomePage = () => (
   <>
@@ -95,6 +107,29 @@ const HomePage = () => (
         ))}
       </div>
     </SectionFive>
+    <SectionSix alignItems="flex-start" justifyContent="flex-start">
+      <div className="video">
+        <video
+          autoplay="autoplay"
+          playsinline
+          loop="loop"
+          muted="muted"
+          preload="auto"
+          crossorigin="anonymous"
+        >
+          <source src={video} type="video/mp4" />
+        </video>
+        <div className="overlay"></div>
+      </div>
+      <div className="content">
+        <TitleXL>Jovanovska Jovana</TitleXL>
+        <TitleL>Frontend Engineer</TitleL>
+        <TitleL>UI Designer</TitleL>
+        <TitleL>Visual Storyteller</TitleL>
+        <TitleL>Traveler</TitleL>
+        <TitleL>Dreamer</TitleL>
+      </div>
+    </SectionSix>
   </>
 )
 

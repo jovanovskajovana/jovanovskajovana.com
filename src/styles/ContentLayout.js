@@ -161,4 +161,37 @@ const SectionFive = styled(Container)`
   }
 `
 
-export { SectionOne, SectionTwo, SectionThree, SectionFour, SectionFive }
+const SectionSix = styled(Container)`
+  padding: 0 5vw;
+  margin-bottom: 35vh;
+  color: ${(props) => props.theme.textPrimary};
+
+  .video {
+    position: relative;
+  }
+
+  video {
+    max-height: 80vh;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: ${(props) => props.theme.backgroundDark};
+    opacity: 0.2;
+  }
+
+  .content {
+    padding-left: 10vw;
+    padding-top: 10vh;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+  }
+`
+
+export { SectionOne, SectionTwo, SectionThree, SectionFour, SectionFive, SectionSix }

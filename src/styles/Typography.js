@@ -15,9 +15,9 @@ const TitleXL = styled.h2`
 `
 
 const TitleL = styled.h3`
-  font-size: 1rem; //36
+  font-size: 2vw; //36
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.6;
   letter-spacing: 0.04em;
   font-family: ${(props) => props.theme.fontSecondary};
 `
