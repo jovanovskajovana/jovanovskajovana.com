@@ -5,10 +5,16 @@ import WavesLeft from '../components/figures/WavesLeft'
 import WavesRight from '../components/figures/WavesRight'
 import Sun from '../components/figures/Sun'
 
-import { skills } from '../constants/content'
+import { skills, hobby, work, writing } from '../constants/content'
 
-import { SectionOne, SectionTwo } from '../styles/ContentLayout'
-import { TextXXL, TextM, TextS, TextXS } from '../styles/Typography'
+import {
+  SectionOne,
+  SectionTwo,
+  SectionThree,
+  SectionFour,
+  SectionFive,
+} from '../styles/ContentLayout'
+import { TitleXXL, TitleXL, TextL, TitleM, TextM, TextS, TextXS } from '../styles/Typography'
 
 const HomePage = () => (
   <>
@@ -19,7 +25,7 @@ const HomePage = () => (
       <WavesRight top="35vh" right="-4vw" />
 
       <div className="intro">
-        <TextXXL>I believe</TextXXL>
+        <TitleXXL>I believe</TitleXXL>
         <div className="text">
           <TextS italic>
             in ideas and the art of software development to bring them to fruition. Love solving
@@ -39,10 +45,56 @@ const HomePage = () => (
 
       <div className="content">
         {skills.map((item, index) => (
-          <TextM key={index}>{item}</TextM>
+          <TextL key={index}>{item}</TextL>
         ))}
       </div>
     </SectionTwo>
+    <SectionThree column alignItems="flex-start">
+      <div className="content">
+        <TextXS>Hobby Projects</TextXS>
+
+        {hobby.map((item, index) => (
+          <div key={index} className="link-item">
+            <TextM>{item.id}</TextM>
+            <TitleXXL key={index}>
+              <a href={item.url} target="_blank">
+                {item.title}
+              </a>
+            </TitleXXL>
+          </div>
+        ))}
+      </div>
+    </SectionThree>
+    <SectionFour column alignItems="flex-start">
+      <TextXS>What Did I Work On</TextXS>
+
+      <div className="content">
+        {work.map((item, index) => (
+          <div key={index} className="link-item">
+            <TitleXL key={index}>
+              <a href={item.url} target="_blank">
+                {item.title}
+              </a>
+            </TitleXL>
+          </div>
+        ))}
+      </div>
+    </SectionFour>
+    <SectionFive column alignItems="flex-end">
+      <div className="content">
+        <TextXS>Plus Some Writing</TextXS>
+
+        {writing.map((item, index) => (
+          <div key={index} className="link-item">
+            <TitleM key={index}>
+              <a href={item.url} target="_blank">
+                {item.title}
+              </a>
+            </TitleM>
+          </div>
+        ))}
+      </div>
+    </SectionFive>
   </>
 )
 

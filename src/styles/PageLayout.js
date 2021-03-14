@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const PageLayout = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${(props) => props.theme.backgroundPrimary};
+  background: ${(props) => props.theme.backgroundPrimary};
   color: ${(props) => props.theme.textPrimary};
   width: 100vw;
   min-height: 100vh;
