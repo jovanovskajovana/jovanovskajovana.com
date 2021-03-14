@@ -31,7 +31,6 @@ import {
 
 const HomePage = () => (
   <>
-    <SEO title="Home" />
     <SectionOne justifyContent="flex-start" alignItems="flex-end">
       <Sun top="10vh" right="15vw" />
       <WavesLeft top="20vh" left="-4vw" />
@@ -113,12 +112,12 @@ const HomePage = () => (
         <TitleXXL>Who</TitleXXL>
         <TitleXXL>Am I</TitleXXL>
         <video
-          autoplay="autoplay"
-          playsinline
+          autoPlay="autoplay"
+          playsInline
           loop="loop"
           muted="muted"
           preload="auto"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         >
           <source src={video} type="video/mp4" />
         </video>
