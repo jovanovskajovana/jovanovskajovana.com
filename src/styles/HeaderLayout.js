@@ -15,6 +15,7 @@ const HeaderLayout = styled.div`
   .connect {
     position: relative;
     font-size: 1rem;
+    line-height: 1.8;
 
     &:after {
       position: absolute;

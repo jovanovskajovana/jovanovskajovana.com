@@ -3,6 +3,7 @@ import React from 'react'
 import video from '../assets/images/video.mp4'
 
 import SEO from '../components/SEO'
+import Social from '../components/Social'
 import WavesLeft from '../components/figures/WavesLeft'
 import WavesRight from '../components/figures/WavesRight'
 import Sun from '../components/figures/Sun'
@@ -109,6 +110,8 @@ const HomePage = () => (
     </SectionFive>
     <SectionSix alignItems="flex-start" justifyContent="flex-start">
       <div className="video">
+        <TitleXXL>Who</TitleXXL>
+        <TitleXXL>Am I</TitleXXL>
         <video
           autoplay="autoplay"
           playsinline
@@ -128,6 +131,7 @@ const HomePage = () => (
         <TitleL>Visual Storyteller</TitleL>
         <TitleL>Traveler</TitleL>
         <TitleL>Dreamer</TitleL>
+        <Social />
       </div>
     </SectionSix>
   </>

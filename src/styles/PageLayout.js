@@ -25,4 +25,30 @@ const Svg = styled.svg`
   right: ${(props) => props.right};
 `
 
-export { PageLayout, Container, Svg }
+const SocialWrapper = styled.div`
+  display: flex;
+  font-family: ${(props) => props.theme.fontPrimary};
+  color: ${(props) => props.theme.textPrimary};
+  padding-right: 5.5vw;
+  margin-top: auto;
+  margin-left: auto;
+
+  a {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-left: 2.4vw;
+
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: ${(props) => props.theme.textPrimary};
+    }
+  }
+`
+
+export { PageLayout, Container, Svg, SocialWrapper }

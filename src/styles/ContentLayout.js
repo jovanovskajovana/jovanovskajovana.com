@@ -168,10 +168,11 @@ const SectionSix = styled(Container)`
 
   .video {
     position: relative;
+    height: 80vh;
   }
 
   video {
-    max-height: 80vh;
+    max-height: 100%;
   }
 
   .overlay {
@@ -185,8 +186,25 @@ const SectionSix = styled(Container)`
   }
 
   .content {
-    padding-left: 10vw;
-    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12vw;
+    padding-top: 12.5vh;
+    height: 80vh;
+  }
+
+  h1 {
+    position: absolute;
+
+    &:nth-child(1) {
+      top: -0.65em;
+      right: -0.68em;
+    }
+
+    &:nth-child(2) {
+      top: 0.4em;
+      right: -0.35em;
+    }
   }
 
   h2 {
