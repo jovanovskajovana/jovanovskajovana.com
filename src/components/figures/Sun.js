@@ -4,7 +4,7 @@ import theme from '../../constants/theme'
 
 import { Svg } from '../../styles/PageLayout'
 
-const Sun = ({ color = theme.textHiglight, top, left, right }) => (
+const Sun = ({ color = theme.textHighlight, top, left, right }) => (
   <Svg
     width="180"
     height="180"

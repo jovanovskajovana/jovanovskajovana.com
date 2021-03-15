@@ -69,7 +69,7 @@ const SectionTwo = styled(Container)`
       bottom: 0;
       height: 1px;
       width: calc(100% - 1rem);
-      background-color: ${(props) => props.theme.textHiglight};
+      background-color: ${(props) => props.theme.textHighlight};
       display: none;
     }
 

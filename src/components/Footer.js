@@ -1,12 +1,25 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import moment from 'moment'
 
 import FooterLayout from '../styles/FooterLayout'
 
-const Header = () => (
-  <FooterLayout>
-    <span className="copy">Jovanovska Jovana © 2021</span>
-  </FooterLayout>
-)
+const Footer = () => {
+  const getYearsRange = () => {
+    let range = '2020'
+    const year = moment().year()
 
-export default Header
+    if (year !== 2020) {
+      range += ` - ${year}`
+    }
+
+    return range
+  }
+
+  return (
+    <FooterLayout>
+      <span className="copy">© {getYearsRange()} Jovanovska Jovana</span>
+    </FooterLayout>
+  )
+}
+
+export default Footer
