@@ -2,11 +2,11 @@ import React from 'react'
 
 import video from '../assets/images/video.mp4'
 
-import SEO from '../components/SEO'
 import Social from '../components/Social'
 import WavesLeft from '../components/figures/WavesLeft'
 import WavesRight from '../components/figures/WavesRight'
 import Sun from '../components/figures/Sun'
+import Line from '../components/figures/Line'
 
 import { skills, hobby, work, writing } from '../constants/content'
 
@@ -58,7 +58,10 @@ const HomePage = () => (
 
       <div className="content">
         {skills.map((item, index) => (
-          <TextL key={index}>{item}</TextL>
+          <TextL key={index}>
+            {item}
+            <Line />
+          </TextL>
         ))}
       </div>
     </SectionTwo>
@@ -136,7 +139,7 @@ const HomePage = () => (
     </SectionSix>
     <SectionSeven column>
       <TitleXL>
-        Say <a href="mailto:jovanovska.jovana1@gmail.com">Hello</a>
+        Say <a href="mailto:hello@jovanovskajovana.com">Hello</a>
       </TitleXL>
       <TextL>Question, or a new idea? Let's talk!</TextL>
     </SectionSeven>

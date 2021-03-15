@@ -8,9 +8,9 @@ const Header = () => (
     <Link to="/" className="logo">
       J.
     </Link>
-    <Link to="/contact" className="connect">
+    <a href="mailto:hello@jovanovskajovana.com" className="connect">
       Hi
-    </Link>
+    </a>
   </HeaderLayout>
 )
 

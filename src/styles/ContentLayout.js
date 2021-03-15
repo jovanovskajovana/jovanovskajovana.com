@@ -50,12 +50,13 @@ const SectionTwo = styled(Container)`
     position: relative;
     padding-left: 1vw;
     margin-right: 1.9vw;
-    margin-bottom: 0.4rem;
+    padding-bottom: 0.4rem;
+    overflow: hidden;
 
     &:before {
       position: absolute;
       content: '';
-      top: 50%;
+      top: 40%;
       left: 0;
       height: 4px;
       width: 4px;
@@ -65,12 +66,23 @@ const SectionTwo = styled(Container)`
     &:after {
       position: absolute;
       content: '';
-      right: 0;
-      bottom: 0;
+      left: 1.1rem;
+      bottom: 6px;
       height: 1px;
       width: calc(100% - 1rem);
       background-color: ${(props) => props.theme.textHighlight};
-      display: none;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    svg {
+      position: absolute;
+      left: 1.1rem;
+      bottom: 0;
+      opacity: 0;
+      visibility: hidden;
+      will-change: opacity, visibility;
+      transition: all 0.2s;
     }
 
     &:nth-child(2),
@@ -78,7 +90,30 @@ const SectionTwo = styled(Container)`
     &:nth-child(18),
     &:nth-child(20) {
       &:after {
-        display: block;
+        opacity: 1;
+        visibility: visible;
+        will-change: opacity, visibility;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &:hover {
+    p:nth-child(2),
+    p:nth-child(12),
+    p:nth-child(18),
+    p:nth-child(20) {
+      &:after {
+        opacity: 0;
+        visibility: hidden;
+        will-change: opacity, visibility;
+        transition: all 0.3s;
+      }
+      svg {
+        opacity: 1;
+        visibility: visible;
+        will-change: opacity, visibility;
+        transition: all 0.3s;
       }
     }
   }
