@@ -17,6 +17,7 @@ import {
   SectionFour,
   SectionFive,
   SectionSix,
+  SectionSeven,
 } from '../styles/ContentLayout'
 import {
   TitleXXL,
@@ -133,6 +134,12 @@ const HomePage = () => (
         <Social />
       </div>
     </SectionSix>
+    <SectionSeven column>
+      <TitleXL>
+        Say <a href="mailto:jovanovska.jovana1@gmail.com">Hello</a>
+      </TitleXL>
+      <TextL>Question, or a new idea? Let's talk!</TextL>
+    </SectionSeven>
   </>
 )
 

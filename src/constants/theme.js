@@ -1,6 +1,6 @@
 const theme = {
   // backgroundPrimary: 'linear-gradient(180deg, #F5F5F5 0%, #ECE8D5 100%)',
-  backgroundPrimary: '#f5f5f5',
+  backgroundPrimary: '#f6f5f6',
   backgroundDark: '#434675',
   textPrimary: '#1e1e1e',
   textHiglight: '#f95b5b',

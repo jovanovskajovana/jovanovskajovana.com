@@ -30,7 +30,7 @@ const TitleM = styled.h3`
 `
 
 const TextL = styled.p`
-  font-size: 1.55vw; //28
+  font-size: 1.6vw; //28
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.04em;
@@ -47,7 +47,7 @@ const TextM = styled.p`
 const TextS = styled.p`
   font-size: 1rem; //16
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.85;
   letter-spacing: 0.04em;
   font-family: ${(props) => props.theme.fontSecondary};
   font-style: ${(props) => (props.italic ? 'italic' : 'normal')};

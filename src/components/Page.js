@@ -8,6 +8,7 @@ import FontFace from '../styles/FontFace'
 import { PageLayout } from '../styles/PageLayout'
 
 import Header from './Header'
+import Footer from './Footer'
 import SEO from './SEO'
 
 const Page = ({ children }) => (
@@ -19,6 +20,7 @@ const Page = ({ children }) => (
         <SEO />
         <Header />
         {children}
+        <Footer />
       </PageLayout>
     </ThemeProvider>
   </>

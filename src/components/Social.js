@@ -10,11 +10,11 @@ const Social = () => (
     <a href="https://www.linkedin.com/in/jovanovskajovana" target="_blank">
       In
     </a>
-    <a href="https://www.facebook.com/jovana.jovanovska.79" target="_blank">
-      Fb
+    <a href="#" target="_blank">
+      Be
     </a>
-    <a href="mailto:jovanovska.jovana1@gmail.com" target="_blank">
-      Gm
+    <a href="#" target="_blank">
+      Dr
     </a>
   </SocialWrapper>
 )

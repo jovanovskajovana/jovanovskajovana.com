@@ -77,12 +77,12 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ::-moz-selection { 
-    color: #fff;
+    color: #f5f5f5;
     background: #f95b5b;
   }
 
   ::selection {
-    color: #fff;
+    color: #f5f5f5;
     background: #f95b5b;
   }
 

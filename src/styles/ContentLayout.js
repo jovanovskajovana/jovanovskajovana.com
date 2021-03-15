@@ -5,7 +5,7 @@ import { Container } from './PageLayout'
 const SectionOne = styled(Container)`
   position: relative;
   padding-top: 64vh;
-  margin-bottom: 35vh;
+  margin-bottom: 30vh;
   color: ${(props) => props.theme.textPrimary};
 
   .intro {
@@ -49,7 +49,7 @@ const SectionTwo = styled(Container)`
   p {
     position: relative;
     padding-left: 1vw;
-    margin-right: 2.2vw;
+    margin-right: 1.9vw;
     margin-bottom: 0.4rem;
 
     &:before {
@@ -212,4 +212,28 @@ const SectionSix = styled(Container)`
   }
 `
 
-export { SectionOne, SectionTwo, SectionThree, SectionFour, SectionFive, SectionSix }
+const SectionSeven = styled(Container)`
+  padding: 0 5vw;
+  margin-bottom: 30vh;
+  color: ${(props) => props.theme.textPrimary};
+
+  a {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: ${(props) => props.theme.textPrimary};
+    }
+  }
+
+  p {
+    padding-top: 1.5rem;
+  }
+`
+
+export { SectionOne, SectionTwo, SectionThree, SectionFour, SectionFive, SectionSix, SectionSeven }
