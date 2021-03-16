@@ -68,7 +68,7 @@ const SectionTwo = styled(Container)`
       content: '';
       left: 1.1rem;
       bottom: 6px;
-      height: 1px;
+      height: 2px;
       width: calc(100% - 1rem);
       background-color: ${(props) => props.theme.textHighlight};
       opacity: 0;
@@ -82,7 +82,7 @@ const SectionTwo = styled(Container)`
       opacity: 0;
       visibility: hidden;
       will-change: opacity, visibility;
-      transition: all 0.2s;
+      transition: all 0.1s;
     }
 
     &:nth-child(2),
@@ -93,7 +93,7 @@ const SectionTwo = styled(Container)`
         opacity: 1;
         visibility: visible;
         will-change: opacity, visibility;
-        transition: all 0.3s;
+        transition: all 0.1s;
       }
     }
   }
@@ -107,7 +107,7 @@ const SectionTwo = styled(Container)`
         opacity: 0;
         visibility: hidden;
         will-change: opacity, visibility;
-        transition: all 0.3s;
+        transition: all 0.1s;
       }
       svg {
         opacity: 1;
@@ -137,6 +137,20 @@ const SectionThree = styled(Container)`
     }
   }
 
+  .floating-img {
+    position: absolute;
+    max-width: 20vw;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   p {
     position: absolute;
     top: 0;
@@ -145,8 +159,8 @@ const SectionThree = styled(Container)`
 
   h1 {
     line-height: 0.8;
-    padding-left: 4vw;
-    padding-bottom: 4rem;
+    margin-left: 4vw;
+    margin-bottom: 4rem;
   }
 `
 

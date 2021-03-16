@@ -7,6 +7,7 @@ import GlobalStyles from '../styles/GlobalStyles'
 import FontFace from '../styles/FontFace'
 import { PageLayout } from '../styles/PageLayout'
 
+import Cursor from './Cursor'
 import Header from './Header'
 import Footer from './Footer'
 import SEO from './SEO'
@@ -18,6 +19,7 @@ const Page = ({ children }) => (
     <ThemeProvider theme={theme}>
       <PageLayout>
         <SEO />
+        <Cursor />
         <Header />
         {children}
         <Footer />

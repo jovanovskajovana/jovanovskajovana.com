@@ -6,7 +6,7 @@ const PageLayout = styled.div`
   background: ${(props) => props.theme.backgroundPrimary};
   color: ${(props) => props.theme.textPrimary};
   width: 100vw;
-  min-height: 100vh;
+  height: 100%;
 `
 
 const Container = styled.div`
@@ -16,6 +16,16 @@ const Container = styled.div`
   min-width: ${(props) => (props.minWidth ? props.minWidth : '100%')};
   justify-content: ${(props) => (props.justifyContent ? props.justifyContent : 'center')};
   align-items: ${(props) => (props.alignItems ? props.alignItems : 'center')};
+`
+
+const Cursor = styled.div`
+  position: fixed;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #f097b0;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 10;
 `
 
 const Svg = styled.svg`
@@ -51,4 +61,4 @@ const SocialWrapper = styled.div`
   }
 `
 
-export { PageLayout, Container, Svg, SocialWrapper }
+export { PageLayout, Container, Cursor, Svg, SocialWrapper }

@@ -1,3 +1,6 @@
+import linkImg1 from '../assets/images/link-img-1.png'
+import linkImg2 from '../assets/images/link-img-2.png'
+
 export const skills = [
   'JavaScript',
   'React.js',
@@ -28,21 +31,25 @@ export const hobby = [
     id: '01',
     title: 'Colorized.mk',
     url: 'https://colorized.mk/',
+    img: `${linkImg1}`,
   },
   {
     id: '02',
     title: 'Viktor’s Page',
     url: 'https://colorized.mk/',
+    img: `${linkImg2}`,
   },
   {
     id: '03',
     title: 'Playground',
     url: 'https://colorized.mk/',
+    img: `${linkImg1}`,
   },
   {
     id: '04',
     title: 'LeZéro',
     url: 'https://colorized.mk/',
+    img: `${linkImg1}`,
   },
 ]
 

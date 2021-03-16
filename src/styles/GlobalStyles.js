@@ -26,14 +26,6 @@ const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
   }
 
-  .no-scroll {
-    overflow: hidden !important;
-  }
-
-  .hide {
-    display: none !important;
-  }
-
   ::-webkit-scrollbar {
     width: 8px;
   }

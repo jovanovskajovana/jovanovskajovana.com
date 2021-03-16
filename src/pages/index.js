@@ -3,9 +3,9 @@ import React from 'react'
 import video from '../assets/images/video.mp4'
 
 import Social from '../components/Social'
-import WavesLeft from '../components/figures/WavesLeft'
-import WavesRight from '../components/figures/WavesRight'
-import Sun from '../components/figures/Sun'
+import IntroGroup from '../components/IntroGroup'
+import ListWithImage from '../components/ListWithImage'
+
 import Line from '../components/figures/Line'
 
 import { skills, hobby, work, writing } from '../constants/content'
@@ -19,40 +19,14 @@ import {
   SectionSix,
   SectionSeven,
 } from '../styles/ContentLayout'
-import {
-  TitleXXL,
-  TitleXL,
-  TitleL,
-  TitleM,
-  TextL,
-  TextM,
-  TextS,
-  TextXS,
-} from '../styles/Typography'
+import { TitleXXL, TitleXL, TitleL, TitleM, TextL, TextXS } from '../styles/Typography'
 
 const HomePage = () => (
   <>
     <SectionOne justifyContent="flex-start" alignItems="flex-end">
-      <Sun top="10vh" right="15vw" />
-      <WavesLeft top="20vh" left="-4vw" />
-      <WavesRight top="35vh" right="-4vw" />
-
-      <div className="intro">
-        <TitleXXL>I believe</TitleXXL>
-        <div className="text">
-          <TextS italic>
-            in ideas and the art of software development to bring them to fruition. Love solving
-            problems with family and friends, and teammates who can be both.
-          </TextS>
-          <TextS>
-            With around 7 years of practical experience and five years full-time member of a
-            brilliant team, developing projects for clients around the world, and Silicon Valley
-            tech companies. Working with colors and making pixel perfect UI is my biggest love, as
-            long as the code is clean and well structured.
-          </TextS>
-        </div>
-      </div>
+      <IntroGroup />
     </SectionOne>
+
     <SectionTwo column alignItems="flex-start">
       <TextXS>Skills & Tools</TextXS>
 
@@ -65,29 +39,24 @@ const HomePage = () => (
         ))}
       </div>
     </SectionTwo>
+
     <SectionThree column alignItems="flex-start">
       <div className="content">
         <TextXS>Hobby Projects</TextXS>
 
         {hobby.map((item, index) => (
-          <div key={index} className="link-item">
-            <TextM>{item.id}</TextM>
-            <TitleXXL key={index}>
-              <a href={item.url} target="_blank">
-                {item.title}
-              </a>
-            </TitleXXL>
-          </div>
+          <ListWithImage key={index} item={item} />
         ))}
       </div>
     </SectionThree>
+
     <SectionFour column alignItems="flex-start">
       <TextXS>What Did I Work On</TextXS>
 
       <div className="content">
         {work.map((item, index) => (
           <div key={index} className="link-item">
-            <TitleXL key={index}>
+            <TitleXL>
               <a href={item.url} target="_blank">
                 {item.title}
               </a>
@@ -96,6 +65,7 @@ const HomePage = () => (
         ))}
       </div>
     </SectionFour>
+
     <SectionFive column alignItems="flex-end">
       <div className="content">
         <TextXS>Plus Some Writing</TextXS>
@@ -111,6 +81,7 @@ const HomePage = () => (
         ))}
       </div>
     </SectionFive>
+
     <SectionSix alignItems="flex-start" justifyContent="flex-start">
       <div className="video">
         <TitleXXL>Who</TitleXXL>
@@ -137,11 +108,12 @@ const HomePage = () => (
         <Social />
       </div>
     </SectionSix>
+
     <SectionSeven column>
       <TitleXL>
         Say <a href="mailto:hello@jovanovskajovana.com">Hello</a>
       </TitleXL>
-      <TextL>Question, or a new idea? Let's talk!</TextL>
+      <TextL>Question or new idea? Let's talk!</TextL>
     </SectionSeven>
   </>
 )
