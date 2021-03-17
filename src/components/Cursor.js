@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import { useTapGesture } from 'framer-motion'
+import React, { useEffect, useState } from 'react'
 
 import useMousePosition from '../hooks/useMousePosition'
 
@@ -8,19 +8,25 @@ import { Cursor } from '../styles/PageLayout'
 const CursorPosition = () => {
   const { x, y } = useMousePosition()
 
+  const [isHovering, setIsHovering] = useState(false)
+  const links = document.querySelectorAll('a')
+
+  useEffect(() => {
+    links.forEach((link) => {
+      link.addEventListener('mouseenter', () => setIsHovering(true))
+      link.addEventListener('mouseleave', () => setIsHovering(false))
+    })
+  }, [isHovering])
+
   return (
-    <motion.div
-      animate={{
-        x: x - 12,
-        y: y - 12,
+    <Cursor
+      style={{
+        transform: `translate(${x}px, ${y}px)`,
       }}
-      transition={{
-        ease: 'linear',
-        duration: 0.02,
-      }}
+      isHovering={isHovering}
     >
-      <Cursor />
-    </motion.div>
+      <div className="pointer" />
+    </Cursor>
   )
 }
 

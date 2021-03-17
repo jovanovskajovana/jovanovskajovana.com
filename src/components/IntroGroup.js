@@ -16,27 +16,25 @@ const IntroGroup = () => (
     <WavesRight top="35vh" right="-4vw" />
 
     <div className="intro">
-      <TitleXXL>
-        <motion.div initial={{ y: 200 }} animate={{ y: 0 }} transition={transition}>
-          I believe
-        </motion.div>
-      </TitleXXL>
+      <motion.div initial={{ y: 200 }} animate={{ y: 0 }} transition={transition}>
+        <TitleXXL>I believe</TitleXXL>
+      </motion.div>
 
       <div className="text">
-        <TextS italic>
-          <motion.div initial={{ y: 200 }} animate={{ y: 0 }} transition={transition}>
+        <motion.div initial={{ y: 200 }} animate={{ y: 0 }} transition={transition}>
+          <TextS italic>
             in ideas and the art of software development to bring them to fruition. Love solving
             problems with family and friends, and teammates who can be both.
-          </motion.div>
-        </TextS>
-        <TextS>
-          <motion.div initial={{ y: 200 }} animate={{ y: 0 }} transition={transition}>
+          </TextS>
+        </motion.div>
+        <motion.div initial={{ y: 200 }} animate={{ y: 0 }} transition={transition}>
+          <TextS>
             With around 7 years of practical experience and five years full-time member of a
             brilliant team, developing projects for clients around the world, and Silicon Valley
             tech companies. Working with colors and making pixel perfect UI is my biggest love, as
             long as the code is clean and well structured.
-          </motion.div>
-        </TextS>
+          </TextS>
+        </motion.div>
       </div>
     </div>
   </>

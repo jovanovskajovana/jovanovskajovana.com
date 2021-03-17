@@ -18,21 +18,27 @@ const Container = styled.div`
   align-items: ${(props) => (props.alignItems ? props.alignItems : 'center')};
 `
 
-const Cursor = styled.div`
-  position: fixed;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: #f097b0;
-  border-radius: 100%;
-  pointer-events: none;
-  z-index: 10;
-`
-
 const Svg = styled.svg`
   position: absolute;
   top: ${(props) => props.top};
   left: ${(props) => props.left};
   right: ${(props) => props.right};
+`
+
+const Cursor = styled.div`
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+
+  .pointer {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: ${(props) => props.theme.backgroundDark};
+    border-radius: 100%;
+    opacity: ${(props) => (props.isHovering ? 0.8 : 1)};
+    transform: ${(props) => (props.isHovering ? `scale(2.2)` : `scale(1)`)};
+    transition: transform 0.2s linear;
+  }
 `
 
 const SocialWrapper = styled.div`
@@ -61,4 +67,4 @@ const SocialWrapper = styled.div`
   }
 `
 
-export { PageLayout, Container, Cursor, Svg, SocialWrapper }
+export { PageLayout, Container, Svg, Cursor, SocialWrapper }

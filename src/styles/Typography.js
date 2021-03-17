@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const TitleXXL = styled.h1`
   font-size: 7vw; //130
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.5;
   font-family: ${(props) => props.theme.fontPrimary};
 `
 

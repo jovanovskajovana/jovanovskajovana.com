@@ -24,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
     overscroll-behavior-y: none;
     overflow: overlay;
     overflow-x: hidden;
+    cursor: none;
   }
 
   ::-webkit-scrollbar {
@@ -52,6 +53,7 @@ const GlobalStyles = createGlobalStyle`
   a {
     color: inherit;
     text-decoration: none;
+    cursor: none;
   }
 
   h1,

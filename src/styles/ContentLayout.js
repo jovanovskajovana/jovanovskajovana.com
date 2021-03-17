@@ -4,7 +4,7 @@ import { Container } from './PageLayout'
 
 const SectionOne = styled(Container)`
   position: relative;
-  padding-top: 64vh;
+  padding-top: 63vh;
   margin-bottom: 30vh;
   color: ${(props) => props.theme.textPrimary};
 
@@ -50,7 +50,7 @@ const SectionTwo = styled(Container)`
     position: relative;
     padding-left: 1vw;
     margin-right: 1.9vw;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.5rem;
     overflow: hidden;
 
     &:before {
@@ -158,9 +158,9 @@ const SectionThree = styled(Container)`
   }
 
   h1 {
-    line-height: 0.8;
+    line-height: 0.9;
     margin-left: 4vw;
-    margin-bottom: 4rem;
+    margin-bottom: 4.2rem;
   }
 `
 
@@ -196,7 +196,7 @@ const SectionFour = styled(Container)`
 
 const SectionFive = styled(Container)`
   padding: 0 5vw;
-  margin-bottom: 35vh;
+  margin-bottom: 38vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {

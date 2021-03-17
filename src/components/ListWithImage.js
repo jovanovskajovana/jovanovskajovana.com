@@ -14,7 +14,7 @@ const ListWithImage = ({ item }) => {
 
   useEffect(() => {
     setLinkPosition({
-      top: linkRef.current.getBoundingClientRect().top + window.scrollY + 200,
+      top: linkRef.current.getBoundingClientRect().top + 250,
       left: linkRef.current.getBoundingClientRect().left,
     })
   }, [isHovering])
