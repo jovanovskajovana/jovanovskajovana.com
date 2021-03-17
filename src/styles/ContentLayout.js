@@ -148,7 +148,6 @@ const SectionThree = styled(Container)`
   img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
   }
 
   p {
@@ -158,7 +157,7 @@ const SectionThree = styled(Container)`
   }
 
   h1 {
-    line-height: 0.9;
+    line-height: 0.8;
     margin-left: 4vw;
     margin-bottom: 4.2rem;
   }

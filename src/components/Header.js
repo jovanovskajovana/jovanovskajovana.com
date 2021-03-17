@@ -6,10 +6,10 @@ import HeaderLayout from '../styles/HeaderLayout'
 const Header = () => (
   <HeaderLayout>
     <Link to="/" className="logo">
-      J.
+      <span>J.</span>
     </Link>
     <a href="mailto:hello@jovanovskajovana.com" className="connect">
-      Hi
+      <span>Hi</span>
     </a>
   </HeaderLayout>
 )

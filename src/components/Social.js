@@ -5,16 +5,16 @@ import { SocialWrapper } from '../styles/PageLayout'
 const Social = () => (
   <SocialWrapper>
     <a href="https://github.com/jovanovskajovana" target="_blank">
-      Gh
+      <span className="link">Gh</span>
     </a>
     <a href="https://www.linkedin.com/in/jovanovskajovana" target="_blank">
-      In
+      <span className="link">In</span>
     </a>
     <a href="#" target="_blank">
-      Be
+      <span className="link">Be</span>
     </a>
     <a href="#" target="_blank">
-      Dr
+      <span className="link">Dr</span>
     </a>
   </SocialWrapper>
 )

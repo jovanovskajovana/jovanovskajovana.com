@@ -31,12 +31,10 @@ const Cursor = styled.div`
   z-index: 10;
 
   .pointer {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
     background-color: ${(props) => props.theme.backgroundDark};
     border-radius: 100%;
-    opacity: ${(props) => (props.isHovering ? 0.8 : 1)};
-    transform: ${(props) => (props.isHovering ? `scale(2.2)` : `scale(1)`)};
     transition: transform 0.2s linear;
   }
 `
@@ -49,7 +47,7 @@ const SocialWrapper = styled.div`
   margin-top: auto;
   margin-left: auto;
 
-  a {
+  .link {
     position: relative;
     font-size: 1rem;
     line-height: 1.8;
@@ -59,7 +57,7 @@ const SocialWrapper = styled.div`
       position: absolute;
       content: '';
       left: 0;
-      bottom: 0;
+      bottom: -5px;
       width: 100%;
       height: 1px;
       background-color: ${(props) => props.theme.textPrimary};
