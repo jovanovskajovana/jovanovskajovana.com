@@ -41,24 +41,22 @@ const ListWithImage = ({ item }) => {
             transition={{ duration: 0 }}
             className="floating-img"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.3 }}
-              animate={{
+            <div
+              style={{
                 opacity: isHovering ? 1 : 0,
-                scale: isHovering ? 1 : 0.3,
+                transform: `scale(${isHovering ? 1 : 0.3})`,
+                transition: `transform 2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s linear`,
               }}
-              transition={{ ease: [0.16, 1, 0.3, 1], duration: isHovering ? 1.6 : 0.4 }}
             >
-              <motion.img
-                initial={{ scale: 1.7 }}
-                animate={{
-                  scale: isHovering ? 1 : 1.7,
+              <img
+                style={{
+                  transform: `scale(${isHovering ? 1 : 1.7})`,
+                  transition: `transform 2s cubic-bezier(0.16, 1, 0.3, 1)`,
                 }}
-                transition={{ ease: [0.16, 1, 0.3, 1], duration: isHovering ? 1.6 : 0.4 }}
                 src={item.img}
                 alt="Project"
               />
-            </motion.div>
+            </div>
           </motion.div>
         </TitleXXL>
       </motion.div>

@@ -35,7 +35,7 @@ const SectionOne = styled(Container)`
 `
 
 const SectionTwo = styled(Container)`
-  padding: 0 5vw;
+  padding: 0 5vw 0 5.5vw;
   margin-bottom: 35vh;
   color: ${(props) => props.theme.textPrimary};
 
@@ -49,7 +49,7 @@ const SectionTwo = styled(Container)`
   p {
     position: relative;
     padding-left: 1vw;
-    margin-right: 1.9vw;
+    margin-right: 1.7vw;
     padding-bottom: 0.5rem;
     overflow: hidden;
 

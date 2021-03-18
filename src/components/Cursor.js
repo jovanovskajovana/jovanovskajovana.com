@@ -22,13 +22,12 @@ const CursorPosition = () => {
       style={{
         transform: `translate(${x}px, ${y}px)`,
       }}
-      isHovering={isHovering}
     >
       <div
         className="pointer"
         style={{
           opacity: isHovering ? 0.8 : 1,
-          transform: `scale(${isHovering ? 2.4 : 1})`,
+          transform: `scale(${isHovering ? 2.6 : 1})`,
         }}
       />
     </Cursor>
