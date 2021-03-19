@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import { ThemeProvider } from 'styled-components'
 
 import theme from '../constants/theme'
@@ -12,20 +13,28 @@ import Header from './Header'
 import Footer from './Footer'
 import SEO from './SEO'
 
-const Page = ({ children }) => (
-  <>
-    <GlobalStyles />
-    <FontFace />
-    <ThemeProvider theme={theme}>
-      <PageLayout>
+const Page = ({ children }) => {
+  const containerRef = useRef(null)
+
+  return (
+    <>
+      <GlobalStyles />
+      <FontFace />
+      <ThemeProvider theme={theme}>
         <SEO />
         <Cursor />
-        <Header />
-        {children}
-        <Footer />
-      </PageLayout>
-    </ThemeProvider>
-  </>
-)
+        <LocomotiveScrollProvider options={{ smooth: true }} watch={[]} containerRef={containerRef}>
+          <main data-scroll-container ref={containerRef}>
+            <PageLayout data-scroll-section>
+              <Header />
+              {children}
+              <Footer />
+            </PageLayout>
+          </main>
+        </LocomotiveScrollProvider>
+      </ThemeProvider>
+    </>
+  )
+}
 
 export default Page

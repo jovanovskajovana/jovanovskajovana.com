@@ -16,11 +16,11 @@ const IntroGroup = () => (
       <TitleXXL>I believe</TitleXXL>
 
       <div className="text">
-        <TextS italic>
+        <TextS italic data-scroll data-scroll-speed="1">
           in ideas and the art of software development to bring them to fruition. Love solving
           problems with family and friends, and teammates who can be both.
         </TextS>
-        <TextS>
+        <TextS data-scroll data-scroll-speed="1">
           With around 7 years of practical experience and five years full-time member of a brilliant
           team, developing projects for clients around the world, and Silicon Valley tech companies.
           Working with colors and making pixel perfect UI is my biggest love, as long as the code is

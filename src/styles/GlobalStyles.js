@@ -22,26 +22,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: none;
-    overflow: overlay;
-    overflow-x: hidden;
     cursor: none;
-  }
-
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
- 
-  ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.5);
   }
 
   ul,
@@ -89,6 +70,54 @@ const GlobalStyles = createGlobalStyle`
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
   }
+
+  /* Locomotive Scroll */
+
+  html.has-scroll-smooth {
+    overflow: hidden; 
+  }
+
+  html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+  }
+
+  .has-scroll-smooth body {
+    overflow: hidden; 
+  }
+
+  .has-scroll-smooth [data-scroll-container] {
+    min-height: 100vh; 
+  }
+  
+  .c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background: transparent;
+  }
+
+  .c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.2;
+    width: 8px;
+    border-radius: 4px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab; 
+    transition: opacity 0.2s linear;
+  }
+
+  .c-scrollbar_thumb:hover {
+    opacity: 0.5;
+  }  
 `
 
 export default GlobalStyles
