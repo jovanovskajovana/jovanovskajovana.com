@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
 
 import useMousePosition from '../hooks/useMousePosition'
 
@@ -22,30 +21,28 @@ const ListWithImage = ({ item }) => {
   return (
     <div className="link-item">
       <TextM>{item.id}</TextM>
-      <motion.div
+      <div
         href={item.url}
         target="_blank"
         ref={linkRef}
-        onHoverStart={() => setIsHovering(true)}
-        onHoverEnd={() => setIsHovering(false)}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
       >
         <TitleXXL>
           <a href={item.url} target="_blank">
             {item.title}
           </a>
-          <motion.div
-            animate={{
-              x: x - linkPosition.left,
-              y: y - linkPosition.top,
-            }}
-            transition={{ duration: 0 }}
+          <div
             className="floating-img"
+            style={{
+              transform: `translate(${x - linkPosition.left}px, ${y - linkPosition.top}px)`,
+            }}
           >
             <div
               style={{
                 opacity: isHovering ? 1 : 0,
                 transform: `scale(${isHovering ? 1 : 0.3})`,
-                transition: `transform 2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s linear`,
+                transition: `transform 2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s linear`,
               }}
             >
               <img
@@ -57,9 +54,9 @@ const ListWithImage = ({ item }) => {
                 alt="Project"
               />
             </div>
-          </motion.div>
+          </div>
         </TitleXXL>
-      </motion.div>
+      </div>
     </div>
   )
 }
