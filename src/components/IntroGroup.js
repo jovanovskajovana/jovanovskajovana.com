@@ -13,25 +13,25 @@ const IntroGroup = () => (
     </div>
 
     <div className="waves-left">
-      <div data-scroll data-scroll-speed="5" data-scroll-position="top">
+      <div data-scroll data-scroll-speed="3" data-scroll-position="top">
         <WavesLeft />
       </div>
     </div>
 
     <div className="waves-right">
-      <div data-scroll data-scroll-speed="4" data-scroll-position="top">
+      <div data-scroll data-scroll-speed="2" data-scroll-position="top">
         <WavesRight />
       </div>
     </div>
 
     <div className="intro">
       <div className="title">
-        <TitleXXL data-scroll data-scroll-speed="5" data-scroll-position="top">
+        <TitleXXL data-scroll data-scroll-speed="3" data-scroll-position="top">
           I believe
         </TitleXXL>
       </div>
 
-      <div className="text" data-scroll data-scroll-speed="5" data-scroll-position="top">
+      <div className="text" data-scroll data-scroll-speed="3" data-scroll-position="top">
         <div className="subtitle" data-scroll data-scroll-offset="25%">
           <TextS italic>
             in ideas and the art of software development to bring them to fruition. Love solving

@@ -66,7 +66,7 @@ const SectionOne = styled(Container)`
     display: flex;
     justify-content: flex-end;
     transform: rotate(25deg);
-    animation: ${sunMove} 3s ease-out forwards 1.4s;
+    animation: ${sunMove} 3s ease-out forwards 1.2s;
     opacity: 0;
   }
 
@@ -110,7 +110,7 @@ const SectionOne = styled(Container)`
 
 const SectionTwo = styled(Container)`
   padding: 0 5vw 0 5.5vw;
-  margin-bottom: 35vh;
+  margin-bottom: 40vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {
