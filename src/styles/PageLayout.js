@@ -18,13 +18,6 @@ const Container = styled.div`
   align-items: ${(props) => (props.alignItems ? props.alignItems : 'center')};
 `
 
-const Svg = styled.svg`
-  position: absolute;
-  top: ${(props) => props.top};
-  left: ${(props) => props.left};
-  right: ${(props) => props.right};
-`
-
 const Cursor = styled.div`
   position: fixed;
   pointer-events: none;
@@ -65,4 +58,4 @@ const SocialWrapper = styled.div`
   }
 `
 
-export { PageLayout, Container, Svg, Cursor, SocialWrapper }
+export { PageLayout, Container, Cursor, SocialWrapper }

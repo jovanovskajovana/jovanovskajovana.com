@@ -8,24 +8,44 @@ import { TitleXXL, TextS } from '../styles/Typography'
 
 const IntroGroup = () => (
   <>
-    <Sun top="10vh" right="15vw" />
-    <WavesLeft top="20vh" left="-4vw" />
-    <WavesRight top="35vh" right="-4vw" />
+    <div className="sun">
+      <Sun />
+    </div>
+
+    <div className="waves-left">
+      <div data-scroll data-scroll-speed="3" data-scroll-position="top">
+        <WavesLeft />
+      </div>
+    </div>
+
+    <div className="waves-right">
+      <div data-scroll data-scroll-speed="2" data-scroll-position="top">
+        <WavesRight />
+      </div>
+    </div>
 
     <div className="intro">
-      <TitleXXL>I believe</TitleXXL>
+      <div className="title">
+        <TitleXXL data-scroll data-scroll-speed="3" data-scroll-position="top">
+          I believe
+        </TitleXXL>
+      </div>
 
-      <div className="text">
-        <TextS italic data-scroll data-scroll-speed="1">
-          in ideas and the art of software development to bring them to fruition. Love solving
-          problems with family and friends, and teammates who can be both.
-        </TextS>
-        <TextS data-scroll data-scroll-speed="1">
-          With around 7 years of practical experience and five years full-time member of a brilliant
-          team, developing projects for clients around the world, and Silicon Valley tech companies.
-          Working with colors and making pixel perfect UI is my biggest love, as long as the code is
-          clean and well structured.
-        </TextS>
+      <div className="text" data-scroll data-scroll-speed="3" data-scroll-position="top">
+        <div className="subtitle" data-scroll data-scroll-offset="250">
+          <TextS italic>
+            in ideas and the art of software development to bring them to fruition. Love solving
+            problems with family and friends, and teammates who can be both.
+          </TextS>
+        </div>
+        <div className="subtitle" data-scroll data-scroll-offset="250">
+          <TextS>
+            With around 7 years of practical experience and five years full-time member of a
+            brilliant team, developing projects for clients around the world, and Silicon Valley
+            tech companies. Working with colors and making pixel perfect UI is my biggest love, as
+            long as the code is clean and well structured.
+          </TextS>
+        </div>
       </div>
     </div>
   </>

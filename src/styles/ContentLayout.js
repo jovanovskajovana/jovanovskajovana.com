@@ -1,6 +1,42 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import { Container } from './PageLayout'
+
+const sunMove = keyframes`
+  0% {
+    opacity: 0;
+    transform: rotate(25deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-30deg);
+  }
+`
+
+const wavesReveal = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);;
+  }
+`
+
+const titleReveal = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);;
+  }
+`
 
 const SectionOne = styled(Container)`
   position: relative;
@@ -19,17 +55,55 @@ const SectionOne = styled(Container)`
   .text {
     display: flex;
     max-width: 80%;
+  }
 
-    p {
-      margin-left: 1rem;
+  .sun {
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    width: 45vw;
+    height: 45vw;
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(25deg);
+    animation: ${sunMove} 3s ease-out forwards 1.3s;
+    opacity: 0;
+  }
 
-      &:first-child {
-        max-width: 250px;
-      }
+  .waves-left {
+    position: absolute;
+    top: 20vh;
+    left: -4vw;
+    opacity: 0;
+    transform: translateY(20%);
+    animation: ${wavesReveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
+  }
 
-      &:last-child {
-        max-width: 250px;
-      }
+  .waves-right {
+    position: absolute;
+    top: 35vh;
+    right: -4vw;
+    opacity: 0;
+    transform: translateY(20%);
+    animation: ${wavesReveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
+  }
+
+  .title {
+    opacity: 0;
+    transform: translateY(40%);
+    animation: ${titleReveal} 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
+  }
+
+  .subtitle {
+    margin-left: 1rem;
+    max-width: 250px;
+    opacity: 0;
+    transform: translateY(30%);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &.is-inview {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 `
