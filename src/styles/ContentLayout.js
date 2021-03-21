@@ -19,7 +19,7 @@ const sunMove = keyframes`
 const wavesReveal = keyframes`
   0% {
     opacity: 0;
-    transform: translateY(20%);
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
@@ -30,7 +30,7 @@ const wavesReveal = keyframes`
 const titleReveal = keyframes`
   0% {
     opacity: 0;
-    transform: translateY(40%);
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
@@ -41,7 +41,7 @@ const titleReveal = keyframes`
 const SectionOne = styled(Container)`
   position: relative;
   padding-top: 63vh;
-  margin-bottom: 30vh;
+  margin-bottom: 10vh;
   color: ${(props) => props.theme.textPrimary};
 
   .intro {
@@ -66,7 +66,7 @@ const SectionOne = styled(Container)`
     display: flex;
     justify-content: flex-end;
     transform: rotate(25deg);
-    animation: ${sunMove} 3s ease-out forwards 1.3s;
+    animation: ${sunMove} 3s ease-out forwards 1.4s;
     opacity: 0;
   }
 
@@ -75,7 +75,7 @@ const SectionOne = styled(Container)`
     top: 20vh;
     left: -4vw;
     opacity: 0;
-    transform: translateY(20%);
+    transform: translateY(100px);
     animation: ${wavesReveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
   }
 
@@ -84,13 +84,13 @@ const SectionOne = styled(Container)`
     top: 35vh;
     right: -4vw;
     opacity: 0;
-    transform: translateY(20%);
+    transform: translateY(100px);
     animation: ${wavesReveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
   }
 
   .title {
     opacity: 0;
-    transform: translateY(40%);
+    transform: translateY(100px);
     animation: ${titleReveal} 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
   }
 
@@ -98,7 +98,7 @@ const SectionOne = styled(Container)`
     margin-left: 1rem;
     max-width: 250px;
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(100px);
     transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     &.is-inview {
@@ -118,6 +118,25 @@ const SectionTwo = styled(Container)`
     flex-wrap: wrap;
     width: 100%;
     padding-top: 2rem;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &.is-inview {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  span {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &.is-inview {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   p {

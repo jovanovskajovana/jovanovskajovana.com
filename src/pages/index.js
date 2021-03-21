@@ -28,9 +28,11 @@ const HomePage = () => (
     </SectionOne>
 
     <SectionTwo column alignItems="flex-start">
-      <TextXS>Skills & Tools</TextXS>
+      <TextXS data-scroll data-scroll-offset="25%">
+        Skills & Tools
+      </TextXS>
 
-      <div className="content">
+      <div className="content" data-scroll data-scroll-offset="30%">
         {skills.map((item, index) => (
           <TextL key={index}>
             {item}

@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 const reveal = keyframes`
   0% {
     opacity: 0;
-    transform: translateY(60%);
+    transform: translateY(50px);
   }
   100% {
     opacity: 1;
@@ -24,7 +24,7 @@ const HeaderLayout = styled.div`
     min-width: 3rem;
     min-height: 3rem;
     opacity: 0;
-    transform: translateY(60%);
+    transform: translateY(50px);
     animation: ${reveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
   }
 
@@ -34,7 +34,7 @@ const HeaderLayout = styled.div`
     min-width: 3rem;
     min-height: 3rem;
     opacity: 0;
-    transform: translateY(60%);
+    transform: translateY(50px);
     animation: ${reveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
 
     span {
