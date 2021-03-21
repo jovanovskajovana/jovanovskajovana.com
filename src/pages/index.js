@@ -28,9 +28,9 @@ const HomePage = () => (
     </SectionOne>
 
     <SectionTwo column alignItems="flex-start">
-      <TextXS data-scroll data-scroll-offset="25%">
-        Skills & Tools
-      </TextXS>
+      <div className="section-title" data-scroll data-scroll-offset="30%">
+        <TextXS>Skills & Tools</TextXS>
+      </div>
 
       <div className="content" data-scroll data-scroll-offset="30%">
         {skills.map((item, index) => (
@@ -44,11 +44,15 @@ const HomePage = () => (
 
     <SectionThree column alignItems="flex-start">
       <div className="content">
-        <TextXS>Hobby Projects</TextXS>
+        <div className="section-title" data-scroll data-scroll-offset="25%">
+          <TextXS>Hobby Projects</TextXS>
+        </div>
 
-        {hobby.map((item, index) => (
-          <ListWithImage key={index} item={item} />
-        ))}
+        <div className="links" data-scroll data-scroll-offset="25%">
+          {hobby.map((item, index) => (
+            <ListWithImage key={index} item={item} />
+          ))}
+        </div>
       </div>
     </SectionThree>
 
@@ -70,17 +74,21 @@ const HomePage = () => (
 
     <SectionFive column alignItems="flex-end">
       <div className="content">
-        <TextXS>Plus Some Writing</TextXS>
+        <div className="section-title" data-scroll data-scroll-offset="30%">
+          <TextXS>Plus Some Writing</TextXS>
+        </div>
 
-        {writing.map((item, index) => (
-          <div key={index} className="link-item">
-            <TitleM key={index}>
-              <a href={item.url} target="_blank">
-                {item.title}
-              </a>
-            </TitleM>
-          </div>
-        ))}
+        <div className="links" data-scroll data-scroll-offset="30%">
+          {writing.map((item, index) => (
+            <div key={index} className="link-item">
+              <TitleM key={index}>
+                <a href={item.url} target="_blank">
+                  {item.title}
+                </a>
+              </TitleM>
+            </div>
+          ))}
+        </div>
       </div>
     </SectionFive>
 

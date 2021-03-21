@@ -66,7 +66,7 @@ const SectionOne = styled(Container)`
     display: flex;
     justify-content: flex-end;
     transform: rotate(25deg);
-    animation: ${sunMove} 3s ease-out forwards 1.2s;
+    animation: ${sunMove} 4s ease forwards 1.3s;
     opacity: 0;
   }
 
@@ -98,7 +98,7 @@ const SectionOne = styled(Container)`
     margin-left: 1rem;
     max-width: 250px;
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(60px);
     transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     &.is-inview {
@@ -117,20 +117,44 @@ const SectionTwo = styled(Container)`
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 2rem;
     opacity: 0;
-    transform: translateY(150px);
-    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(100px);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
 
     &.is-inview {
       opacity: 1;
       transform: translateY(0);
+
+      p:after {
+        transform: scaleX(1);
+      }
+    }
+
+    &:hover {
+      p:nth-child(2),
+      p:nth-child(12),
+      p:nth-child(18),
+      p:nth-child(20) {
+        &:after {
+          opacity: 0;
+          visibility: hidden;
+          will-change: opacity, visibility;
+          transition: all 0.1s;
+        }
+        svg {
+          opacity: 1;
+          visibility: visible;
+          will-change: opacity, visibility;
+          transition: all 0.3s;
+        }
+      }
     }
   }
 
-  span {
+  .section-title {
+    margin-bottom: 2rem;
     opacity: 0;
-    transform: translateY(150px);
+    transform: translateY(100px);
     transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     &.is-inview {
@@ -166,6 +190,8 @@ const SectionTwo = styled(Container)`
       background-color: ${(props) => props.theme.textHighlight};
       opacity: 0;
       visibility: hidden;
+      transform: scaleX(0);
+      transform-origin: left;
     }
 
     svg {
@@ -185,28 +211,8 @@ const SectionTwo = styled(Container)`
       &:after {
         opacity: 1;
         visibility: visible;
-        will-change: opacity, visibility;
-        transition: all 0.1s;
-      }
-    }
-  }
-
-  &:hover {
-    p:nth-child(2),
-    p:nth-child(12),
-    p:nth-child(18),
-    p:nth-child(20) {
-      &:after {
-        opacity: 0;
-        visibility: hidden;
-        will-change: opacity, visibility;
-        transition: all 0.1s;
-      }
-      svg {
-        opacity: 1;
-        visibility: visible;
-        will-change: opacity, visibility;
-        transition: all 0.3s;
+        will-change: opacity, visibility, transform;
+        transition: opacity 0.1s, visibility 0.1s, transform 1s ease;
       }
     }
   }
@@ -224,14 +230,10 @@ const SectionThree = styled(Container)`
 
   .link-item {
     position: relative;
-
-    &:nth-child(2) {
-      margin-top: 3rem;
-    }
   }
 
   .floating-img {
-    position: absolute;
+    position: fixed;
     max-width: 20vw;
     pointer-events: none;
     overflow: hidden;
@@ -243,16 +245,63 @@ const SectionThree = styled(Container)`
     height: 100%;
   }
 
+  .section-title {
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &.is-inview {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   p {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    transform: translateY(100px);
+    will-change: opacity, transform;
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   h1 {
     line-height: 0.8;
     margin-left: 4vw;
     margin-bottom: 4.2rem;
+    opacity: 0;
+    transform: translateY(100px);
+    will-change: opacity, transform;
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .links.is-inview {
+    h1,
+    p {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .link-item {
+      &:nth-child(1) h1,
+      &:nth-child(1) p {
+        transition-delay: 0.1s;
+      }
+      &:nth-child(2) h1,
+      &:nth-child(2) p {
+        transition-delay: 0.2s;
+      }
+      &:nth-child(3) h1,
+      &:nth-child(3) p {
+        transition-delay: 0.3s;
+      }
+      &:nth-child(4) h1,
+      &:nth-child(4) p {
+        transition-delay: 0.4s;
+      }
+    }
   }
 `
 
@@ -295,9 +344,42 @@ const SectionFive = styled(Container)`
     width: 40%;
   }
 
+  .section-title {
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &.is-inview {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .link-item {
-    &:nth-child(2) {
-      margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(100px);
+    will-change: opacity, transform;
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .links.is-inview {
+    .link-item {
+      opacity: 1;
+      transform: translateY(0);
+
+      &:nth-child(1) {
+        transition-delay: 0.1s;
+      }
+      &:nth-child(2) {
+        transition-delay: 0.2s;
+      }
+      &:nth-child(3) {
+        transition-delay: 0.3s;
+      }
+      &:nth-child(4) {
+        transition-delay: 0.4s;
+      }
     }
   }
 `

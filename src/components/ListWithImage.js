@@ -32,30 +32,30 @@ const ListWithImage = ({ item }) => {
           <a href={item.url} target="_blank">
             {item.title}
           </a>
+        </TitleXXL>
+        <div
+          className="floating-img"
+          style={{
+            transform: `translate(${x - linkPosition.left}px, ${y - linkPosition.top}px)`,
+          }}
+        >
           <div
-            className="floating-img"
             style={{
-              transform: `translate(${x - linkPosition.left}px, ${y - linkPosition.top}px)`,
+              opacity: isHovering ? 1 : 0,
+              transform: `scale(${isHovering ? 1 : 0.3})`,
+              transition: `transform 2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s linear`,
             }}
           >
-            <div
+            <img
               style={{
-                opacity: isHovering ? 1 : 0,
-                transform: `scale(${isHovering ? 1 : 0.3})`,
-                transition: `transform 2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s linear`,
+                transform: `scale(${isHovering ? 1 : 1.7})`,
+                transition: `transform 2s cubic-bezier(0.16, 1, 0.3, 1)`,
               }}
-            >
-              <img
-                style={{
-                  transform: `scale(${isHovering ? 1 : 1.7})`,
-                  transition: `transform 2s cubic-bezier(0.16, 1, 0.3, 1)`,
-                }}
-                src={item.img}
-                alt="Project"
-              />
-            </div>
+              src={item.img}
+              alt="Project"
+            />
           </div>
-        </TitleXXL>
+        </div>
       </div>
     </div>
   )
