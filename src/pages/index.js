@@ -5,10 +5,10 @@ import video from '../assets/images/video.mp4'
 import Social from '../components/Social'
 import IntroGroup from '../components/IntroGroup'
 import ListWithImage from '../components/ListWithImage'
-
+import ListMarquee from '../components/ListMarquee'
 import Line from '../components/figures/Line'
 
-import { skills, hobby, work, writing } from '../constants/content'
+import { skills, hobby, writing } from '../constants/content'
 
 import {
   SectionOne,
@@ -57,18 +57,13 @@ const HomePage = () => (
     </SectionThree>
 
     <SectionFour column alignItems="flex-start">
-      <TextXS>What Did I Work On</TextXS>
+      <div className="section-title">
+        <TextXS>What Did I Work On</TextXS>
+      </div>
 
       <div className="content">
-        {work.map((item, index) => (
-          <div key={index} className="link-item">
-            <TitleXL>
-              <a href={item.url} target="_blank">
-                {item.title}
-              </a>
-            </TitleXL>
-          </div>
-        ))}
+        <ListMarquee />
+        <ListMarquee />
       </div>
     </SectionFour>
 

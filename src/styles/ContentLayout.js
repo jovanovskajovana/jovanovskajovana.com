@@ -23,7 +23,7 @@ const wavesReveal = keyframes`
   }
   100% {
     opacity: 1;
-    transform: translateY(0);;
+    transform: translateY(0);
   }
 `
 
@@ -34,7 +34,16 @@ const titleReveal = keyframes`
   }
   100% {
     opacity: 1;
-    transform: translateY(0);;
+    transform: translateY(0);
+  }
+`
+
+const listMarquee = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 `
 
@@ -76,7 +85,7 @@ const SectionOne = styled(Container)`
     left: -4vw;
     opacity: 0;
     transform: translateY(100px);
-    animation: ${wavesReveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
+    animation: ${wavesReveal} 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
   }
 
   .waves-right {
@@ -85,13 +94,13 @@ const SectionOne = styled(Container)`
     right: -4vw;
     opacity: 0;
     transform: translateY(100px);
-    animation: ${wavesReveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
+    animation: ${wavesReveal} 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
   }
 
   .title {
     opacity: 0;
     transform: translateY(100px);
-    animation: ${titleReveal} 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
+    animation: ${titleReveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s forwards;
   }
 
   .subtitle {
@@ -99,7 +108,7 @@ const SectionOne = styled(Container)`
     max-width: 250px;
     opacity: 0;
     transform: translateY(60px);
-    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     &.is-inview {
       opacity: 1;
@@ -119,7 +128,7 @@ const SectionTwo = styled(Container)`
     width: 100%;
     opacity: 0;
     transform: translateY(100px);
-    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
 
     &.is-inview {
       opacity: 1;
@@ -155,7 +164,7 @@ const SectionTwo = styled(Container)`
     margin-bottom: 2rem;
     opacity: 0;
     transform: translateY(100px);
-    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     &.is-inview {
       opacity: 1;
@@ -249,7 +258,7 @@ const SectionThree = styled(Container)`
     margin-bottom: 3rem;
     opacity: 0;
     transform: translateY(100px);
-    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     &.is-inview {
       opacity: 1;
@@ -264,7 +273,7 @@ const SectionThree = styled(Container)`
     opacity: 0;
     transform: translateY(100px);
     will-change: opacity, transform;
-    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   h1 {
@@ -274,7 +283,7 @@ const SectionThree = styled(Container)`
     opacity: 0;
     transform: translateY(100px);
     will-change: opacity, transform;
-    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   .links.is-inview {
@@ -306,16 +315,28 @@ const SectionThree = styled(Container)`
 `
 
 const SectionFour = styled(Container)`
+  position: relative;
   padding: 0 5vw;
-  margin-bottom: 35vh;
+  margin-bottom: 50vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {
+    position: absolute;
+    top: 3rem;
+    display: flex;
+    min-width: 100%;
+
+    &:hover .marquee {
+      animation-play-state: paused;
+    }
+  }
+
+  .marquee {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    padding-top: 2rem;
-    margin-left: -9vw;
+    transform: translateX(0);
+    animation: ${listMarquee} 20s linear infinite;
   }
 
   h2 {
@@ -337,7 +358,7 @@ const SectionFour = styled(Container)`
 
 const SectionFive = styled(Container)`
   padding: 0 5vw;
-  margin-bottom: 38vh;
+  margin-bottom: 40vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {
@@ -345,10 +366,10 @@ const SectionFive = styled(Container)`
   }
 
   .section-title {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     opacity: 0;
     transform: translateY(100px);
-    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     &.is-inview {
       opacity: 1;
@@ -360,7 +381,7 @@ const SectionFive = styled(Container)`
     opacity: 0;
     transform: translateY(100px);
     will-change: opacity, transform;
-    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   .links.is-inview {

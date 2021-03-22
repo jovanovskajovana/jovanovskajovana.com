@@ -14,7 +14,7 @@ const ListWithImage = ({ item }) => {
   useEffect(() => {
     setLinkPosition({
       top: linkRef.current.getBoundingClientRect().top + 250,
-      left: linkRef.current.getBoundingClientRect().left,
+      left: linkRef.current.getBoundingClientRect().left - 100,
     })
   }, [isHovering])
 
@@ -43,13 +43,13 @@ const ListWithImage = ({ item }) => {
             style={{
               opacity: isHovering ? 1 : 0,
               transform: `scale(${isHovering ? 1 : 0.3})`,
-              transition: `transform 2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s linear`,
+              transition: `transform 3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s linear`,
             }}
           >
             <img
               style={{
                 transform: `scale(${isHovering ? 1 : 1.7})`,
-                transition: `transform 2s cubic-bezier(0.16, 1, 0.3, 1)`,
+                transition: `transform 3s cubic-bezier(0.16, 1, 0.3, 1)`,
               }}
               src={item.img}
               alt="Project"

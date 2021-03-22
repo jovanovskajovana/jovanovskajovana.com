@@ -25,7 +25,7 @@ const HeaderLayout = styled.div`
     min-height: 3rem;
     opacity: 0;
     transform: translateY(50px);
-    animation: ${reveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
+    animation: ${reveal} 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
   }
 
   .connect {
@@ -35,7 +35,7 @@ const HeaderLayout = styled.div`
     min-height: 3rem;
     opacity: 0;
     transform: translateY(50px);
-    animation: ${reveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
+    animation: ${reveal} 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
 
     span {
       position: relative;
