@@ -12,7 +12,7 @@ const sunMove = keyframes`
   }
   100% {
     opacity: 1;
-    transform: rotate(-30deg);
+    transform: rotate(-35deg);
   }
 `
 
@@ -59,14 +59,14 @@ const SectionOne = styled(Container)`
 
   .sun {
     position: absolute;
-    top: 10vh;
-    right: 10vw;
-    width: 45vw;
-    height: 45vw;
+    top: 15vh;
+    right: 0;
+    width: 60vw;
+    height: 60vw;
     display: flex;
     justify-content: flex-end;
-    transform: rotate(25deg);
-    animation: ${sunMove} 4s ease forwards 1.3s;
+    transform: rotate(15deg);
+    animation: ${sunMove} 3.5s ease-out forwards 1.2s;
     opacity: 0;
   }
 
@@ -212,7 +212,7 @@ const SectionTwo = styled(Container)`
         opacity: 1;
         visibility: visible;
         will-change: opacity, visibility, transform;
-        transition: opacity 0.1s, visibility 0.1s, transform 1s ease;
+        transition: opacity 0.1s, visibility 0.1s, transform 1s ease 0.2s;
       }
     }
   }
