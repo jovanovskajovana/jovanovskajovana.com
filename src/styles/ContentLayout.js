@@ -5,7 +5,7 @@ import { Container } from './PageLayout'
 const sunMove = keyframes`
   0% {
     opacity: 0;
-    transform: rotate(25deg);
+    transform: rotate(10deg);
   }
   30% {
     opacity: 1;
@@ -68,13 +68,13 @@ const SectionOne = styled(Container)`
 
   .sun {
     position: absolute;
-    top: 15vh;
+    top: 20vh;
     right: 0;
     width: 60vw;
     height: 60vw;
     display: flex;
     justify-content: flex-end;
-    transform: rotate(15deg);
+    transform: rotate(10deg);
     animation: ${sunMove} 3.5s ease-out forwards 1.2s;
     opacity: 0;
   }
