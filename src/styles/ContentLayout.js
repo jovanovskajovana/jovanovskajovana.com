@@ -12,14 +12,14 @@ const sunMove = keyframes`
   }
   100% {
     opacity: 1;
-    transform: rotate(-35deg);
+    transform: rotate(-30deg);
   }
 `
 
 const wavesReveal = keyframes`
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(150px);
   }
   100% {
     opacity: 1;
@@ -30,7 +30,7 @@ const wavesReveal = keyframes`
 const titleReveal = keyframes`
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(130px);
   }
   100% {
     opacity: 1;
@@ -75,7 +75,7 @@ const SectionOne = styled(Container)`
     display: flex;
     justify-content: flex-end;
     transform: rotate(10deg);
-    animation: ${sunMove} 3.5s ease-out forwards 1.2s;
+    animation: ${sunMove} 3s ease-out forwards 1.3s;
     opacity: 0;
   }
 
@@ -85,7 +85,7 @@ const SectionOne = styled(Container)`
     left: -4vw;
     opacity: 0;
     transform: translateY(150px);
-    animation: ${wavesReveal} 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1s forwards;
+    animation: ${wavesReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1s forwards;
   }
 
   .waves-right {
@@ -94,13 +94,13 @@ const SectionOne = styled(Container)`
     right: -4vw;
     opacity: 0;
     transform: translateY(150px);
-    animation: ${wavesReveal} 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1s forwards;
+    animation: ${wavesReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1s forwards;
   }
 
   .title {
     opacity: 0;
-    transform: translateY(150px);
-    animation: ${titleReveal} 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1.1s forwards;
+    transform: translateY(130px);
+    animation: ${titleReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1.1s forwards;
   }
 
   .subtitle {
@@ -128,7 +128,7 @@ const SectionTwo = styled(Container)`
     width: 100%;
     opacity: 0;
     transform: translateY(150px);
-    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
 
     &.is-inview {
       opacity: 1;
@@ -164,7 +164,7 @@ const SectionTwo = styled(Container)`
     margin-bottom: 2rem;
     opacity: 0;
     transform: translateY(150px);
-    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
 
     &.is-inview {
       opacity: 1;
@@ -381,7 +381,7 @@ const SectionFive = styled(Container)`
     opacity: 0;
     transform: translateY(120px);
     will-change: opacity, transform;
-    transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   .links.is-inview {
@@ -435,8 +435,8 @@ const SectionSix = styled(Container)`
   video {
     max-height: 100%;
     opacity: 0;
-    transform: scale(0.8);
-    transition: all 1.4s ease;
+    transform: scale(0.9);
+    transition: all 1s ease;
   }
 
   .overlay {
@@ -447,15 +447,15 @@ const SectionSix = styled(Container)`
     height: 100%;
     background-color: ${(props) => props.theme.backgroundDark};
     opacity: 0;
-    transform: scale(0.8);
-    transition: all 1.4s ease;
+    transform: scale(0.9);
+    transition: all 1s ease;
   }
 
   .content {
     display: flex;
     flex-direction: column;
     padding-left: 12vw;
-    padding-top: 12.5vh;
+    padding-top: 13.5vh;
     height: 80vh;
 
     &.is-inview {
@@ -472,7 +472,7 @@ const SectionSix = styled(Container)`
     z-index: 1;
     opacity: 0;
     transform: translateY(-150px);
-    transition: all 1.4s ease 0.1s;
+    transition: all 1s ease 0.1s;
 
     &:nth-child(1) {
       top: -0.65em;
@@ -545,7 +545,7 @@ const SectionSeven = styled(Container)`
   p {
     padding-top: 1.2rem;
     opacity: 0;
-    transform: scale(1.3);
+    transform: scale(1.2);
     transform-origin: bottom;
     transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
   }

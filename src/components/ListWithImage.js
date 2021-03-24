@@ -42,14 +42,14 @@ const ListWithImage = ({ item }) => {
           <div
             style={{
               opacity: isHovering ? 1 : 0,
-              transform: `scale(${isHovering ? 1 : 0.3})`,
-              transition: `transform 3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s linear`,
+              transform: `scale(${isHovering ? 1 : 0.5})`,
+              transition: `transform 2.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.2s linear`,
             }}
           >
             <img
               style={{
-                transform: `scale(${isHovering ? 1 : 1.7})`,
-                transition: `transform 3s cubic-bezier(0.16, 1, 0.3, 1)`,
+                transform: `scale(${isHovering ? 1 : 1.5})`,
+                transition: `transform 2.5s cubic-bezier(0.19, 1, 0.22, 1)`,
               }}
               src={item.img}
               alt="Project"
