@@ -84,8 +84,8 @@ const SectionOne = styled(Container)`
     top: 20vh;
     left: -4vw;
     opacity: 0;
-    transform: translateY(100px);
-    animation: ${wavesReveal} 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
+    transform: translateY(150px);
+    animation: ${wavesReveal} 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1s forwards;
   }
 
   .waves-right {
@@ -93,22 +93,22 @@ const SectionOne = styled(Container)`
     top: 35vh;
     right: -4vw;
     opacity: 0;
-    transform: translateY(100px);
-    animation: ${wavesReveal} 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s forwards;
+    transform: translateY(150px);
+    animation: ${wavesReveal} 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1s forwards;
   }
 
   .title {
     opacity: 0;
-    transform: translateY(100px);
-    animation: ${titleReveal} 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s forwards;
+    transform: translateY(150px);
+    animation: ${titleReveal} 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1.1s forwards;
   }
 
   .subtitle {
     margin-left: 1rem;
     max-width: 250px;
     opacity: 0;
-    transform: translateY(60px);
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(100px);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 
     &.is-inview {
       opacity: 1;
@@ -127,8 +127,8 @@ const SectionTwo = styled(Container)`
     flex-wrap: wrap;
     width: 100%;
     opacity: 0;
-    transform: translateY(100px);
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+    transform: translateY(150px);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
 
     &.is-inview {
       opacity: 1;
@@ -163,8 +163,8 @@ const SectionTwo = styled(Container)`
   .section-title {
     margin-bottom: 2rem;
     opacity: 0;
-    transform: translateY(100px);
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(150px);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 
     &.is-inview {
       opacity: 1;
@@ -257,8 +257,8 @@ const SectionThree = styled(Container)`
   .section-title {
     margin-bottom: 3rem;
     opacity: 0;
-    transform: translateY(100px);
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(150px);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 
     &.is-inview {
       opacity: 1;
@@ -271,9 +271,9 @@ const SectionThree = styled(Container)`
     top: 0;
     left: 0;
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(150px);
     will-change: opacity, transform;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   h1 {
@@ -281,9 +281,9 @@ const SectionThree = styled(Container)`
     margin-left: 4vw;
     margin-bottom: 4.2rem;
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(150px);
     will-change: opacity, transform;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   .links.is-inview {
@@ -368,8 +368,8 @@ const SectionFive = styled(Container)`
   .section-title {
     margin-bottom: 1.5rem;
     opacity: 0;
-    transform: translateY(100px);
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(150px);
+    transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
 
     &.is-inview {
       opacity: 1;
@@ -379,9 +379,9 @@ const SectionFive = styled(Container)`
 
   .link-item {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(120px);
     will-change: opacity, transform;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   .links.is-inview {
@@ -436,7 +436,7 @@ const SectionSix = styled(Container)`
     max-height: 100%;
     opacity: 0;
     transform: scale(0.8);
-    transition: all 1.5s ease;
+    transition: all 1.4s ease;
   }
 
   .overlay {
@@ -448,7 +448,7 @@ const SectionSix = styled(Container)`
     background-color: ${(props) => props.theme.backgroundDark};
     opacity: 0;
     transform: scale(0.8);
-    transition: all 1.5s ease;
+    transition: all 1.4s ease;
   }
 
   .content {
@@ -471,8 +471,8 @@ const SectionSix = styled(Container)`
     position: absolute;
     z-index: 1;
     opacity: 0;
-    transform: translateY(-100px);
-    transition: all 1s ease 0.2s;
+    transform: translateY(-150px);
+    transition: all 1.4s ease 0.1s;
 
     &:nth-child(1) {
       top: -0.65em;
@@ -490,14 +490,14 @@ const SectionSix = styled(Container)`
     opacity: 0;
     transform: translateY(150px);
     will-change: opacity, transform;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   h3 {
     opacity: 0;
     transform: translateY(150px);
     will-change: opacity, transform;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
   }
 `
 
@@ -522,7 +522,7 @@ const SectionSeven = styled(Container)`
     opacity: 0;
     transform: scale(1.3);
     transform-origin: bottom;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   a {
@@ -538,7 +538,7 @@ const SectionSeven = styled(Container)`
       background-color: ${(props) => props.theme.textPrimary};
       transform: scaleX(0);
       transform-origin: left;
-      transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+      transition: transform 1.8s cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
     }
   }
 
@@ -547,7 +547,7 @@ const SectionSeven = styled(Container)`
     opacity: 0;
     transform: scale(1.3);
     transform-origin: bottom;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
   }
 `
 

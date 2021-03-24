@@ -32,7 +32,7 @@ const HomePage = () => (
         <TextXS>Skills & Tools</TextXS>
       </div>
 
-      <div className="content" data-scroll data-scroll-offset="30%">
+      <div className="content" data-scroll data-scroll-offset="25%">
         {skills.map((item, index) => (
           <TextL key={index}>
             {item}
@@ -88,7 +88,7 @@ const HomePage = () => (
     </SectionFive>
 
     <SectionSix alignItems="flex-start" justifyContent="flex-start">
-      <div className="video" data-scroll data-scroll-offset="45%" data-scroll-repeat>
+      <div className="video" data-scroll data-scroll-offset="45%">
         <TitleXXL>Who</TitleXXL>
         <TitleXXL>Am I</TitleXXL>
         <video
@@ -103,7 +103,7 @@ const HomePage = () => (
         </video>
         <div className="overlay"></div>
       </div>
-      <div className="content" data-scroll data-scroll-offset="45%" data-scroll-repeat>
+      <div className="content" data-scroll data-scroll-offset="45%">
         <TitleXL>Jovanovska Jovana</TitleXL>
         <TitleL>Frontend Engineer</TitleL>
         <TitleL>UI Designer</TitleL>
@@ -114,7 +114,7 @@ const HomePage = () => (
       </div>
     </SectionSix>
 
-    <SectionSeven column data-scroll data-scroll-offset="20%" data-scroll-repeat>
+    <SectionSeven column data-scroll data-scroll-offset="20%">
       <TitleXL>
         Say <a href="mailto:hello@jovanovskajovana.com">Hello</a>
       </TitleXL>
