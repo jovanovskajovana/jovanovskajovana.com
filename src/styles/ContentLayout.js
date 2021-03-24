@@ -317,7 +317,7 @@ const SectionThree = styled(Container)`
 const SectionFour = styled(Container)`
   position: relative;
   padding: 0 5vw;
-  margin-bottom: 50vh;
+  margin-bottom: 45vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {
@@ -358,7 +358,7 @@ const SectionFour = styled(Container)`
 
 const SectionFive = styled(Container)`
   padding: 0 5vw;
-  margin-bottom: 40vh;
+  margin-bottom: 35vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {
@@ -413,10 +413,30 @@ const SectionSix = styled(Container)`
   .video {
     position: relative;
     height: 80vh;
+
+    &.is-inview {
+      video {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .overlay {
+        opacity: 0.2;
+        transform: scale(1);
+      }
+
+      h1 {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   }
 
   video {
     max-height: 100%;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1.5s ease;
   }
 
   .overlay {
@@ -426,7 +446,9 @@ const SectionSix = styled(Container)`
     width: 100%;
     height: 100%;
     background-color: ${(props) => props.theme.backgroundDark};
-    opacity: 0.2;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1.5s ease;
   }
 
   .content {
@@ -435,10 +457,22 @@ const SectionSix = styled(Container)`
     padding-left: 12vw;
     padding-top: 12.5vh;
     height: 80vh;
+
+    &.is-inview {
+      h2,
+      h3 {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   }
 
   h1 {
     position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 1s ease 0.2s;
 
     &:nth-child(1) {
       top: -0.65em;
@@ -453,6 +487,17 @@ const SectionSix = styled(Container)`
 
   h2 {
     padding-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(150px);
+    will-change: opacity, transform;
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  h3 {
+    opacity: 0;
+    transform: translateY(150px);
+    will-change: opacity, transform;
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
   }
 `
 
@@ -460,6 +505,25 @@ const SectionSeven = styled(Container)`
   padding: 0 5vw;
   margin-bottom: 30vh;
   color: ${(props) => props.theme.textPrimary};
+
+  &.is-inview {
+    h2,
+    p {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    a:after {
+      transform: scaleX(1);
+    }
+  }
+
+  h2 {
+    opacity: 0;
+    transform: scale(1.3);
+    transform-origin: bottom;
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
 
   a {
     position: relative;
@@ -472,11 +536,18 @@ const SectionSeven = styled(Container)`
       width: 100%;
       height: 1px;
       background-color: ${(props) => props.theme.textPrimary};
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
     }
   }
 
   p {
-    padding-top: 1.5rem;
+    padding-top: 1.2rem;
+    opacity: 0;
+    transform: scale(1.3);
+    transform-origin: bottom;
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 `
 

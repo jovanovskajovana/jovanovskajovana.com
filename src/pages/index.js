@@ -88,7 +88,7 @@ const HomePage = () => (
     </SectionFive>
 
     <SectionSix alignItems="flex-start" justifyContent="flex-start">
-      <div className="video">
+      <div className="video" data-scroll data-scroll-offset="45%" data-scroll-repeat>
         <TitleXXL>Who</TitleXXL>
         <TitleXXL>Am I</TitleXXL>
         <video
@@ -103,7 +103,7 @@ const HomePage = () => (
         </video>
         <div className="overlay"></div>
       </div>
-      <div className="content">
+      <div className="content" data-scroll data-scroll-offset="45%" data-scroll-repeat>
         <TitleXL>Jovanovska Jovana</TitleXL>
         <TitleL>Frontend Engineer</TitleL>
         <TitleL>UI Designer</TitleL>
@@ -114,7 +114,7 @@ const HomePage = () => (
       </div>
     </SectionSix>
 
-    <SectionSeven column>
+    <SectionSeven column data-scroll data-scroll-offset="20%" data-scroll-repeat>
       <TitleXL>
         Say <a href="mailto:hello@jovanovskajovana.com">Hello</a>
       </TitleXL>
