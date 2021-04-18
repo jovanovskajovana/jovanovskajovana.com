@@ -50,7 +50,7 @@ const listMarquee = keyframes`
 const SectionOne = styled(Container)`
   position: relative;
   padding-top: 63vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   color: ${(props) => props.theme.textPrimary};
 
   .intro {
@@ -119,7 +119,7 @@ const SectionOne = styled(Container)`
 
 const SectionTwo = styled(Container)`
   padding: 0 5vw 0 5.5vw;
-  margin-bottom: 40vh;
+  margin-bottom: 30vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {
@@ -229,7 +229,7 @@ const SectionTwo = styled(Container)`
 
 const SectionThree = styled(Container)`
   padding: 0 5vw;
-  margin-bottom: 35vh;
+  margin-bottom: 25vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {
@@ -315,16 +315,16 @@ const SectionThree = styled(Container)`
 `
 
 const SectionFour = styled(Container)`
-  position: relative;
   padding: 0 5vw;
-  margin-bottom: 45vh;
+  margin-bottom: 30vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {
-    position: absolute;
-    top: 3rem;
     display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     min-width: 100%;
+    padding-top: 2rem;
 
     &:hover .marquee {
       animation-play-state: paused;
@@ -333,9 +333,6 @@ const SectionFour = styled(Container)`
 
   .marquee {
     display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    transform: translateX(0);
     animation: ${listMarquee} 20s linear infinite;
   }
 
@@ -358,7 +355,7 @@ const SectionFour = styled(Container)`
 
 const SectionFive = styled(Container)`
   padding: 0 5vw;
-  margin-bottom: 35vh;
+  margin-bottom: 30vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {
@@ -407,7 +404,7 @@ const SectionFive = styled(Container)`
 
 const SectionSix = styled(Container)`
   padding: 0 5vw;
-  margin-bottom: 35vh;
+  margin-bottom: 30vh;
   color: ${(props) => props.theme.textPrimary};
 
   .video {
@@ -503,7 +500,7 @@ const SectionSix = styled(Container)`
 
 const SectionSeven = styled(Container)`
   padding: 0 5vw;
-  margin-bottom: 30vh;
+  margin-bottom: 25vh;
   color: ${(props) => props.theme.textPrimary};
 
   &.is-inview {
