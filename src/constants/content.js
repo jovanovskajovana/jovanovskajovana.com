@@ -1,5 +1,7 @@
 import linkImg1 from '../assets/images/link-img-1.png'
-import linkImg2 from '../assets/images/link-img-2.png'
+import linkImg2 from '../assets/images/link-img-2.jpeg'
+import linkImg3 from '../assets/images/link-img-3.png'
+import linkImg4 from '../assets/images/link-img-4.png'
 
 export const skills = [
   'JavaScript',
@@ -35,18 +37,24 @@ export const hobby = [
   },
   {
     id: '02',
-    title: 'Viktor’s Page',
+    title: 'Andrea Iris',
     url: 'https://colorized.mk/',
     img: `${linkImg2}`,
   },
   {
     id: '03',
-    title: 'Playground',
-    url: 'https://colorized.mk/',
-    img: `${linkImg1}`,
+    title: 'Lana Sos',
+    url: 'https://lana-sos.webflow.io/',
+    img: `${linkImg3}`,
   },
   {
     id: '04',
+    title: 'Playground',
+    url: 'https://github.com/jovanovskajovana/playground',
+    img: `${linkImg4}`,
+  },
+  {
+    id: '05',
     title: 'LeZéro',
     url: 'https://colorized.mk/',
     img: `${linkImg1}`,
@@ -63,12 +71,28 @@ export const work = [
     url: 'https://room.com/',
   },
   {
-    title: 'BitsOfBali',
-    url: 'https://www.bitsofbali.com/',
+    title: 'MintAndSquare',
+    url: 'https://mintandsquare.com/',
+  },
+  {
+    title: 'Archie',
+    url: 'https://archie.finance/',
+  },
+  {
+    title: 'GlobaliD',
+    url: 'https://global.id/',
   },
   {
     title: 'Plume',
     url: 'https://www.plume.com/',
+  },
+  {
+    title: 'SerenaStore',
+    url: 'https://www.sbyserena.com/',
+  },
+  {
+    title: 'BitsOfBali',
+    url: 'https://www.bitsofbali.com/',
   },
   {
     title: 'Shoobs',
@@ -79,18 +103,22 @@ export const work = [
 export const writing = [
   {
     title: 'React Styleguides',
-    url: '',
+    url: 'https://github.com/jovanovskajovana/styleguides/tree/master/react',
   },
   {
     title: 'JavaScript Styleguides',
-    url: '',
+    url: 'https://github.com/jovanovskajovana/styleguides/tree/master/javascript',
   },
   {
     title: 'Slicing Styleguides',
-    url: '',
+    url: 'https://github.com/jovanovskajovana/styleguides/tree/master/slicing',
   },
   {
     title: 'Gatsby Template',
-    url: '',
+    url: 'https://github.com/jovanovskajovana/gatsby-starter-styled-components',
+  },
+  {
+    title: 'CSS Grid vs Flexbox',
+    url: 'https://github.com/jovanovskajovana/flexbox-vs-cssgrid',
   },
 ]

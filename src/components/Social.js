@@ -10,6 +10,9 @@ const Social = () => (
     <a href="https://www.linkedin.com/in/jovanovskajovana" target="_blank">
       <span className="link">In</span>
     </a>
+    <a href="https://www.instagram.com/jovanovskajovana/" target="_blank">
+      <span className="link">Ig</span>
+    </a>
     <a href="#" target="_blank">
       <span className="link">Be</span>
     </a>

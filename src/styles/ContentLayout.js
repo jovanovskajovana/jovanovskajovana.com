@@ -310,6 +310,10 @@ const SectionThree = styled(Container)`
       &:nth-child(4) p {
         transition-delay: 0.4s;
       }
+      &:nth-child(5) h1,
+      &:nth-child(5) p {
+        transition-delay: 0.5s;
+      }
     }
   }
 `
@@ -333,7 +337,7 @@ const SectionFour = styled(Container)`
 
   .marquee {
     display: flex;
-    animation: ${listMarquee} 20s linear infinite;
+    animation: ${listMarquee} 35s linear infinite;
   }
 
   h2 {
@@ -355,7 +359,7 @@ const SectionFour = styled(Container)`
 
 const SectionFive = styled(Container)`
   padding: 0 5vw;
-  margin-bottom: 30vh;
+  margin-bottom: 32vh;
   color: ${(props) => props.theme.textPrimary};
 
   .content {
@@ -379,6 +383,7 @@ const SectionFive = styled(Container)`
     transform: translateY(120px);
     will-change: opacity, transform;
     transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+    padding-bottom: 0.5rem;
   }
 
   .links.is-inview {
@@ -397,6 +402,9 @@ const SectionFive = styled(Container)`
       }
       &:nth-child(4) {
         transition-delay: 0.4s;
+      }
+      &:nth-child(5) {
+        transition-delay: 0.5s;
       }
     }
   }

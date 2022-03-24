@@ -36,7 +36,6 @@ const SocialWrapper = styled.div`
   display: flex;
   font-family: ${(props) => props.theme.fontPrimary};
   color: ${(props) => props.theme.textPrimary};
-  padding-right: 5.5vw;
   margin-top: auto;
   margin-left: auto;
 
