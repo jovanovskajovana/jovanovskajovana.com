@@ -83,6 +83,10 @@ export const work = [
     url: 'https://global.id/',
   },
   {
+    title: 'Specto',
+    url: 'https://www.specto.dev/',
+  },
+  {
     title: 'Plume',
     url: 'https://www.plume.com/',
   },
