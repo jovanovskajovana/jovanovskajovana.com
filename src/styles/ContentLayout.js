@@ -141,9 +141,9 @@ const SectionTwo = styled(Container)`
 
     &:hover {
       p:nth-child(2),
-      p:nth-child(12),
-      p:nth-child(18),
-      p:nth-child(20) {
+      p:nth-child(14),
+      p:nth-child(20),
+      p:nth-child(22) {
         &:after {
           opacity: 0;
           visibility: hidden;
@@ -214,9 +214,9 @@ const SectionTwo = styled(Container)`
     }
 
     &:nth-child(2),
-    &:nth-child(12),
-    &:nth-child(18),
-    &:nth-child(20) {
+    &:nth-child(14),
+    &:nth-child(20),
+    &:nth-child(22) {
       &:after {
         opacity: 1;
         visibility: visible;
