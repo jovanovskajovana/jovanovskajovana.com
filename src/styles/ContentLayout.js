@@ -206,8 +206,8 @@ const SectionTwo = styled(Container)`
       position: absolute;
       content: '';
       left: 1.3vw;
-      bottom: 0.5vw;
-      height: 0.12vw;
+      bottom: 12%;
+      height: 0.08em;
       width: 100%;
       background-color: ${({ theme }) => theme.textHighlight};
       opacity: 0;
