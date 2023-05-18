@@ -1,24 +1,24 @@
 import linkImg1 from '../assets/images/link-img-1.png'
-import linkImg2 from '../assets/images/link-img-2.jpeg'
+import linkImg2 from '../assets/images/link-img-2.png'
 import linkImg3 from '../assets/images/link-img-3.png'
 import linkImg4 from '../assets/images/link-img-4.png'
+import linkImg5 from '../assets/images/link-img-5.png'
 
 export const skills = [
   'JavaScript',
   'React.js',
-  'Virtual DOM',
+  'TypeScript',
   'State management',
   'Server-Side Rendering',
   'GraphQL & Apollo Client',
-  'TypeScript',
   'REST',
-  'React Native',
   'Gatsby.js',
   'Next.js',
-  'jQuery',
+  'React Native',
   'HTML(5)',
   'CSS(3)',
-  'SASS, LESS preprocesors',
+  'SASS, LESS',
+  'jQuery',
   'Webflow',
   'Git version control',
   'Project management',
@@ -39,27 +39,27 @@ export const hobby = [
   },
   {
     id: '02',
-    title: 'Andrea Iris',
-    url: 'https://colorized.mk/',
+    title: 'Butik EMF',
+    url: 'https://butikfestival.com/',
     img: `${linkImg2}`,
   },
   {
     id: '03',
     title: 'Lana Sos',
-    url: 'https://lana-sos.webflow.io/',
+    url: 'https://lana-sos.com/',
     img: `${linkImg3}`,
   },
   {
     id: '04',
-    title: 'Playground',
-    url: 'https://github.com/jovanovskajovana/playground',
+    title: 'Andrea Iris',
+    url: 'https://colorized.mk/',
     img: `${linkImg4}`,
   },
   {
     id: '05',
-    title: 'LeZéro',
-    url: 'https://colorized.mk/',
-    img: `${linkImg1}`,
+    title: 'Playground',
+    url: 'https://github.com/jovanovskajovana/playground',
+    img: `${linkImg5}`,
   },
 ]
 
@@ -85,16 +85,20 @@ export const work = [
     url: 'https://global.id/',
   },
   {
-    title: '1Home',
-    url: 'https://www.1home.io/',
-  },
-  {
     title: 'Specto',
     url: 'https://www.specto.dev/',
   },
   {
+    title: '1Home',
+    url: 'https://www.1home.io/',
+  },
+  {
     title: 'Plume',
     url: 'https://www.plume.com/',
+  },
+  {
+    title: 'CE.way',
+    url: 'https://ceway.eu/',
   },
   {
     title: 'SerenaStore',

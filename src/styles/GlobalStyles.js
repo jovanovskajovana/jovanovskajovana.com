@@ -12,7 +12,6 @@ const GlobalStyles = createGlobalStyle`
 
   html,
   body {
-    font-size: 16px;
     font-style: normal;
     font-stretch: normal;
     -webkit-font-smoothing: antialiased;
@@ -64,6 +63,11 @@ const GlobalStyles = createGlobalStyle`
   img,
   video {
     max-width: 100%;
+  }
+
+  .svg-responsive {
+    width: 100%;
+    height: auto;
   }
 
   .gatsby-image-wrapper img[src*=base64\\,] {

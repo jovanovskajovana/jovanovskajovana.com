@@ -19,7 +19,14 @@ import {
   SectionSix,
   SectionSeven,
 } from '../styles/ContentLayout'
-import { TitleXXL, TitleXL, TitleL, TitleM, TextL, TextXS } from '../styles/Typography'
+import {
+  TitleXXL,
+  TitleXL,
+  TitleL,
+  TitleM,
+  TextL,
+  TextXS,
+} from '../styles/Typography'
 
 const HomePage = () => (
   <>

@@ -4,12 +4,12 @@ const FooterLayout = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: ${(props) => props.theme.fontSecondary};
-  color: ${(props) => props.theme.textPrimary};
-  padding: 4vh 5vw;
+  font-family: ${({ theme }) => theme.fontSecondary};
+  color: ${({ theme }) => theme.textPrimary};
+  padding: 2% 5vw;
 
   .copy {
-    font-size: 0.75rem;
+    font-size: 0.8vw;
     letter-spacing: 0.04em;
   }
 `

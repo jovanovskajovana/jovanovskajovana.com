@@ -4,20 +4,36 @@ import { SocialWrapper } from '../styles/PageLayout'
 
 const Social = () => (
   <SocialWrapper>
-    <a href="https://github.com/jovanovskajovana" target="_blank">
-      <span className="link">Gh</span>
+    <a
+      className="link"
+      href="https://github.com/jovanovskajovana"
+      target="_blank"
+    >
+      <span>Gh</span>
     </a>
-    <a href="https://www.linkedin.com/in/jovanovskajovana" target="_blank">
-      <span className="link">In</span>
+    <a
+      className="link"
+      href="https://www.linkedin.com/in/jovanovskajovana"
+      target="_blank"
+    >
+      <span>In</span>
     </a>
-    <a href="https://www.instagram.com/jovanovskajovana/" target="_blank">
-      <span className="link">Ig</span>
+    <a
+      className="link"
+      href="https://www.instagram.com/jovanovskajovana/"
+      target="_blank"
+    >
+      <span>Ig</span>
     </a>
-    <a href="#" target="_blank">
-      <span className="link">Be</span>
+    <a className="link" href="https://twitter.com/jovanovska__" target="_blank">
+      <span>Tw</span>
     </a>
-    <a href="#" target="_blank">
-      <span className="link">Dr</span>
+    <a
+      className="link"
+      href="https://discordapp.com/users/jovana#3516"
+      target="_blank"
+    >
+      <span>Ds</span>
     </a>
   </SocialWrapper>
 )
