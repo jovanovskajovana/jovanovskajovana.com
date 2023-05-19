@@ -14,8 +14,10 @@ const Container = styled.div`
   flex-direction: ${({ column }) => (column ? 'column' : 'row')};
   min-height: ${({ minHeight }) => (minHeight ? minHeight : '100%')};
   min-width: ${({ minWidth }) => (minWidth ? minWidth : '100%')};
-  justify-content: ${({ justifyContent }) => (justifyContent ? justifyContent : 'center')};
+  justify-content: ${({ justifyContent }) =>
+    justifyContent ? justifyContent : 'center'};
   align-items: ${({ alignItems }) => (alignItems ? alignItems : 'center')};
+  overflow: hidden;
 `
 
 const Cursor = styled.div`

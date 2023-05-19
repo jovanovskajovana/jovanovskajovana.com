@@ -131,8 +131,7 @@ const SectionOne = styled(Container)`
 `
 
 const SectionTwo = styled(Container)`
-  padding: 0 5vw 0 5.5vw;
-  margin-bottom: 16%;
+  padding: 0 5vw 16% 5.5vw;
   color: ${({ theme }) => theme.textPrimary};
 
   .content {
@@ -334,10 +333,8 @@ const SectionThree = styled(Container)`
 `
 
 const SectionFour = styled(Container)`
-  padding: 0 5vw;
-  margin-bottom: 16%;
+  padding: 0 5vw 16%;
   color: ${({ theme }) => theme.textPrimary};
-  overflow: hidden;
 
   .section-title {
     margin-bottom: 2.5%;
@@ -377,8 +374,7 @@ const SectionFour = styled(Container)`
 `
 
 const SectionFive = styled(Container)`
-  padding: 0 5vw;
-  margin-bottom: 16%;
+  padding: 0 5vw 8%;
   color: ${({ theme }) => theme.textPrimary};
 
   .content {
@@ -430,8 +426,7 @@ const SectionFive = styled(Container)`
 `
 
 const SectionSix = styled(Container)`
-  padding: 0 5vw;
-  margin-bottom: 16%;
+  padding: 8% 5vw 16%;
   color: ${({ theme }) => theme.textPrimary};
 
   .video {
