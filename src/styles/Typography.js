@@ -81,7 +81,7 @@ const TextS = styled.p`
     font-size: 2vw;
   }
 
-  @media (max-width: ${breakpoints.screenLG}) {
+  @media (max-width: ${breakpoints.screenSM}) {
     font-size: 3.5vw;
   }
 `
