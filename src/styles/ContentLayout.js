@@ -53,7 +53,7 @@ const SectionOne = styled(Container)`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding-top: 94%;
+    padding-top: 90%;
     padding-bottom: 0;
     margin-bottom: 20%;
   }
@@ -75,8 +75,8 @@ const SectionOne = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      top: 8%;
-      width: 80vw;
+      top: 10%;
+      width: 100vw;
       height: 80vw;
     }
   }
@@ -106,7 +106,7 @@ const SectionOne = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      top: 16%;
+      top: 14%;
       width: 88vw;
     }
   }
@@ -126,7 +126,7 @@ const SectionOne = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      top: 32%;
+      top: 30%;
       width: 60vw;
 
       .hide-sm {
