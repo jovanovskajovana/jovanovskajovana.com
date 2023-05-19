@@ -459,6 +459,7 @@ const SectionSix = styled(Container)`
   }
 
   video {
+    display: flex;
     height: 100%;
     width: 100%;
     opacity: 0;
