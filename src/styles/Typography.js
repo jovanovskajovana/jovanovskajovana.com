@@ -13,7 +13,7 @@ const TitleXXL = styled.h1`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    font-size: 14vw;
+    font-size: 15vw;
   }
 `
 
@@ -56,6 +56,11 @@ const TextL = styled.p`
   font-family: ${({ theme }) => theme.fontSecondary};
 
   @media (max-width: ${breakpoints.screenLG}) {
+    font-size: 2.6vw;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    font-size: 7vw;
   }
 `
 
@@ -82,7 +87,7 @@ const TextS = styled.p`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 `
 
@@ -93,6 +98,11 @@ const TextXS = styled.span`
   font-family: ${({ theme }) => theme.fontPrimary};
 
   @media (max-width: ${breakpoints.screenLG}) {
+    font-size: 1.8vw;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    font-size: 3.3vw;
   }
 `
 

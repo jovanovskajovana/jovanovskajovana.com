@@ -49,10 +49,13 @@ const SectionOne = styled(Container)`
 
   @media (max-width: ${breakpoints.screenLG}) {
     padding-top: 48%;
+    padding-bottom: 8%;
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding-top: 86%;
+    padding-top: 94%;
+    padding-bottom: 0;
+    margin-bottom: 20%;
   }
 
   .sun {
@@ -123,7 +126,7 @@ const SectionOne = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      top: 34%;
+      top: 32%;
       width: 60vw;
 
       .hide-sm {
@@ -190,7 +193,8 @@ const SectionOne = styled(Container)`
       }
 
       @media (max-width: ${breakpoints.screenSM}) {
-        max-width: 65vw;
+        max-width: 70vw;
+        margin-left: 10vw;
       }
     }
 
@@ -203,8 +207,8 @@ const SectionOne = styled(Container)`
       }
 
       @media (max-width: ${breakpoints.screenSM}) {
-        max-width: 65vw;
-        margin-left: 18vw;
+        max-width: 70vw;
+        margin-left: 10vw;
         margin-top: 6%;
       }
     }
@@ -225,6 +229,10 @@ const SectionTwo = styled(Container)`
   padding: 0 5vw 16% 5.5vw;
   color: ${({ theme }) => theme.textPrimary};
 
+  @media (max-width: ${breakpoints.screenLG}) {
+    padding: 0 5vw 16%;
+  }
+
   .content {
     display: flex;
     flex-wrap: wrap;
@@ -232,6 +240,11 @@ const SectionTwo = styled(Container)`
     opacity: 0;
     transform: translateY(22vh);
     transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
     &.is-inview {
       opacity: 1;
@@ -252,12 +265,22 @@ const SectionTwo = styled(Container)`
           visibility: hidden;
           will-change: opacity, visibility;
           transition: all 0.1s;
+
+          @media (max-width: ${breakpoints.screenLG}) {
+            opacity: 1;
+            visibility: visible;
+          }
         }
         svg {
           opacity: 1;
           visibility: visible;
           will-change: opacity, visibility;
           transition: all 0.3s;
+
+          @media (max-width: ${breakpoints.screenLG}) {
+            opacity: 0;
+            visibility: hidden;
+          }
         }
       }
     }
@@ -268,6 +291,10 @@ const SectionTwo = styled(Container)`
     opacity: 0;
     transform: translateY(20vh);
     transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      margin-bottom: 5%;
+    }
 
     &.is-inview {
       opacity: 1;
@@ -282,6 +309,16 @@ const SectionTwo = styled(Container)`
     padding-bottom: 1%;
     overflow: hidden;
 
+    @media (max-width: ${breakpoints.screenLG}) {
+      padding-left: 2.4vw;
+      padding-bottom: 1.2%;
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      padding-left: 6vw;
+      padding-bottom: 2%;
+    }
+
     :before {
       position: absolute;
       content: '';
@@ -290,6 +327,18 @@ const SectionTwo = styled(Container)`
       height: 0.4vw;
       width: 0.4vw;
       background-color: ${({ theme }) => theme.textPrimary};
+
+      @media (max-width: ${breakpoints.screenLG}) {
+        top: 2vw;
+        height: 0.8vw;
+        width: 0.8vw;
+      }
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        top: 5vw;
+        height: 2vw;
+        width: 2vw;
+      }
     }
 
     :after {
@@ -304,6 +353,14 @@ const SectionTwo = styled(Container)`
       visibility: hidden;
       transform: scaleX(0);
       transform-origin: left;
+
+      @media (max-width: ${breakpoints.screenLG}) {
+        left: 2.6vw;
+      }
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        left: 6.2vw;
+      }
     }
 
     svg {
