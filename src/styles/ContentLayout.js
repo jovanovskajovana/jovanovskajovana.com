@@ -1,5 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 
+import breakpoints from '../constants/breakpoints'
+
 import { Container } from './PageLayout'
 
 const sunMove = keyframes`
@@ -17,22 +19,14 @@ const sunMove = keyframes`
 `
 
 const wavesReveal = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(20vh);
-  }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 `
 
 const titleReveal = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(18vh);
-  }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -50,19 +44,15 @@ const listMarquee = keyframes`
 const SectionOne = styled(Container)`
   position: relative;
   padding-top: 32%;
-  margin-bottom: 4%;
+  padding-bottom: 4%;
   color: ${({ theme }) => theme.textPrimary};
 
-  .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-left: 12vw;
+  @media (max-width: ${breakpoints.screenLG}) {
+    padding-top: 48%;
   }
 
-  .text {
-    display: flex;
-    max-width: 80%;
+  @media (max-width: ${breakpoints.screenSM}) {
+    padding-top: 86%;
   }
 
   .sun {
@@ -76,11 +66,26 @@ const SectionOne = styled(Container)`
     transform: rotate(10deg);
     animation: ${sunMove} 3s ease-out forwards 1.3s;
     opacity: 0;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      top: 10%;
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      top: 8%;
+      width: 80vw;
+      height: 80vw;
+    }
   }
 
   .sun-inner {
     width: 12vw;
     height: 12vw;
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      width: 22vw;
+      height: 22vw;
+    }
   }
 
   .waves-left {
@@ -91,6 +96,16 @@ const SectionOne = styled(Container)`
     opacity: 0;
     transform: translateY(20vh);
     animation: ${wavesReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1s forwards;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      top: 10%;
+      transform: translateY(150px);
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      top: 16%;
+      width: 86vw;
+    }
   }
 
   .waves-right {
@@ -101,12 +116,55 @@ const SectionOne = styled(Container)`
     opacity: 0;
     transform: translateY(20vh);
     animation: ${wavesReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1s forwards;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      top: 20%;
+      transform: translateY(150px);
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      top: 34%;
+      width: 60vw;
+
+      .hide-sm {
+        display: none;
+      }
+    }
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 12vw;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      align-items: flex-start;
+      margin-left: 6vw;
+    }
+  }
+
+  .text {
+    display: flex;
+    max-width: 80%;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      max-width: 100%;
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      flex-direction: column;
+    }
   }
 
   .title {
     opacity: 0;
     transform: translateY(18vh);
     animation: ${titleReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1.1s forwards;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      transform: translateY(130px);
+    }
   }
 
   .subtitle {
@@ -117,15 +175,43 @@ const SectionOne = styled(Container)`
     :nth-child(1) {
       max-width: 14vw;
       margin-right: 3vw;
+
+      @media (max-width: ${breakpoints.screenLG}) {
+        max-width: 30vw;
+        margin-left: 18vw;
+        margin-top: 2%;
+      }
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        max-width: 65vw;
+      }
     }
 
     :nth-child(2) {
       max-width: 16vw;
+
+      @media (max-width: ${breakpoints.screenLG}) {
+        max-width: 32vw;
+        margin-top: 2%;
+      }
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        max-width: 65vw;
+        margin-left: 18vw;
+        margin-top: 6%;
+      }
     }
 
     &.is-inview {
       opacity: 1;
       transform: translateY(0);
+
+      @media (max-width: ${breakpoints.screenLG}) {
+        opacity: 0;
+        transform: translateY(130px);
+        animation: ${titleReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1.2s
+          forwards;
+      }
     }
   }
 `

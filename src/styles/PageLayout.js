@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import breakpoints from '../constants/breakpoints'
+
 const PageLayout = styled.div`
   display: flex;
   flex-direction: column;
@@ -31,6 +33,10 @@ const Cursor = styled.div`
     background-color: ${({ theme }) => theme.backgroundDark};
     border-radius: 100%;
     transition: transform 0.2s linear;
+  }
+
+  @media (max-width: ${breakpoints.screenMD}) {
+    display: none;
   }
 `
 

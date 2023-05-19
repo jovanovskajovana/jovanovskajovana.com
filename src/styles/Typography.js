@@ -1,10 +1,20 @@
 import styled from 'styled-components'
 
+import breakpoints from '../constants/breakpoints'
+
 const TitleXXL = styled.h1`
   font-size: 8vw; //130
   font-weight: 400;
   line-height: 1.5;
   font-family: ${({ theme }) => theme.fontPrimary};
+
+  @media (max-width: ${breakpoints.screenLG}) {
+    font-size: 9vw;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    font-size: 14vw;
+  }
 `
 
 const TitleXL = styled.h2`
@@ -12,6 +22,9 @@ const TitleXL = styled.h2`
   font-weight: 400;
   line-height: 1.4;
   font-family: ${({ theme }) => theme.fontPrimary};
+
+  @media (max-width: ${breakpoints.screenLG}) {
+  }
 `
 
 const TitleL = styled.h3`
@@ -20,6 +33,9 @@ const TitleL = styled.h3`
   line-height: 1.6;
   letter-spacing: 0.04em;
   font-family: ${({ theme }) => theme.fontSecondary};
+
+  @media (max-width: ${breakpoints.screenLG}) {
+  }
 `
 
 const TitleM = styled.h3`
@@ -27,6 +43,9 @@ const TitleM = styled.h3`
   font-weight: 400;
   line-height: 1.8;
   font-family: ${({ theme }) => theme.fontPrimary};
+
+  @media (max-width: ${breakpoints.screenLG}) {
+  }
 `
 
 const TextL = styled.p`
@@ -35,6 +54,9 @@ const TextL = styled.p`
   line-height: 1.8;
   letter-spacing: 0.04em;
   font-family: ${({ theme }) => theme.fontSecondary};
+
+  @media (max-width: ${breakpoints.screenLG}) {
+  }
 `
 
 const TextM = styled.p`
@@ -42,6 +64,9 @@ const TextM = styled.p`
   font-weight: 400;
   line-height: 1.4;
   font-family: ${({ theme }) => theme.fontPrimary};
+
+  @media (max-width: ${breakpoints.screenLG}) {
+  }
 `
 
 const TextS = styled.p`
@@ -51,6 +76,14 @@ const TextS = styled.p`
   letter-spacing: 0.04em;
   font-family: ${({ theme }) => theme.fontSecondary};
   font-style: ${({ italic }) => (italic ? 'italic' : 'normal')};
+
+  @media (max-width: ${breakpoints.screenLG}) {
+    font-size: 2vw;
+  }
+
+  @media (max-width: ${breakpoints.screenLG}) {
+    font-size: 3.5vw;
+  }
 `
 
 const TextXS = styled.span`
@@ -58,6 +91,9 @@ const TextXS = styled.span`
   font-weight: 400;
   line-height: 1.8;
   font-family: ${({ theme }) => theme.fontPrimary};
+
+  @media (max-width: ${breakpoints.screenLG}) {
+  }
 `
 
 export { TitleXXL, TitleXL, TitleL, TitleM, TextL, TextM, TextS, TextXS }
