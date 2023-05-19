@@ -221,7 +221,7 @@ const SectionTwo = styled(Container)`
       left: 1.3vw;
       bottom: 0;
       min-width: 100%;
-      height: auto;
+      height: 1vw;
       opacity: 0;
       visibility: hidden;
       will-change: opacity, visibility;
