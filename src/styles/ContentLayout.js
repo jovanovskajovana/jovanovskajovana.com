@@ -429,9 +429,8 @@ const SectionSix = styled(Container)`
   padding: 8% 5vw 16%;
   color: ${({ theme }) => theme.textPrimary};
 
-  .video {
+  .video-wrapper {
     position: relative;
-    height: 80vh;
 
     &.is-inview {
       video {
@@ -451,8 +450,17 @@ const SectionSix = styled(Container)`
     }
   }
 
+  .video {
+    position: relative;
+    display: contents;
+    width: 100%;
+    height: 100%;
+    max-height: 80vh;
+  }
+
   video {
     height: 100%;
+    width: 100%;
     opacity: 0;
     transform: scale(0.9);
     transition: all 1s ease;
@@ -473,9 +481,7 @@ const SectionSix = styled(Container)`
   .content {
     display: flex;
     flex-direction: column;
-    padding-left: 12vw;
-    padding-top: 9.5%;
-    height: 80vh;
+    padding: 9.5% 6.5vw 0 12vw;
 
     &.is-inview {
       h2,
@@ -510,6 +516,7 @@ const SectionSix = styled(Container)`
     transform: translateY(20vh);
     will-change: opacity, transform;
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    white-space: nowrap;
   }
 
   h3 {

@@ -94,29 +94,33 @@ const HomePage = () => (
       </div>
     </SectionFive>
 
-    <SectionSix alignItems="flex-start" justifyContent="flex-start">
-      <div className="video" data-scroll data-scroll-offset="45%">
+    <SectionSix alignItems="space-between" justifyContent="flex-start">
+      <div className="video-wrapper" data-scroll data-scroll-offset="45%">
         <TitleXXL>Who</TitleXXL>
         <TitleXXL>Am I</TitleXXL>
-        <video
-          autoPlay="autoplay"
-          playsInline
-          loop="loop"
-          muted="muted"
-          preload="auto"
-          crossOrigin="anonymous"
-        >
-          <source src={video} type="video/mp4" />
-        </video>
-        <div className="overlay"></div>
+        <div className="video">
+          <video
+            autoPlay="autoplay"
+            playsInline
+            loop="loop"
+            muted="muted"
+            preload="auto"
+            crossOrigin="anonymous"
+          >
+            <source src={video} type="video/mp4" />
+          </video>
+          <div className="overlay"></div>
+        </div>
       </div>
       <div className="content" data-scroll data-scroll-offset="45%">
-        <TitleXL>Jovanovska Jovana</TitleXL>
-        <TitleL>Frontend Engineer</TitleL>
-        <TitleL>UI Designer</TitleL>
-        <TitleL>Visual Storyteller</TitleL>
-        <TitleL>Traveler</TitleL>
-        <TitleL>Dreamer</TitleL>
+        <div className="info">
+          <TitleXL>Jovanovska Jovana</TitleXL>
+          <TitleL>Frontend Engineer</TitleL>
+          <TitleL>UI Designer</TitleL>
+          <TitleL>Visual Storyteller</TitleL>
+          <TitleL>Traveler</TitleL>
+          <TitleL>Dreamer</TitleL>
+        </div>
         <Social />
       </div>
     </SectionSix>
