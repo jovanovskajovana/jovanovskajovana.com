@@ -52,7 +52,7 @@ const SectionOne = styled(Container)`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding-top: 86%;
+    padding-top: 100%;
   }
 
   .sun {
@@ -72,7 +72,7 @@ const SectionOne = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      top: 8%;
+      top: 10%;
       width: 80vw;
       height: 80vw;
     }
@@ -103,7 +103,7 @@ const SectionOne = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      top: 16%;
+      top: 18%;
       width: 86vw;
     }
   }
@@ -123,7 +123,7 @@ const SectionOne = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      top: 34%;
+      top: 36%;
       width: 60vw;
 
       .hide-sm {
@@ -172,6 +172,13 @@ const SectionOne = styled(Container)`
     transform: translateY(14vh);
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 
+    @media (max-width: ${breakpoints.screenLG}) {
+      opacity: 0;
+      transform: translateY(130px);
+      animation: ${titleReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1.2s
+        forwards;
+    }
+
     :nth-child(1) {
       max-width: 14vw;
       margin-right: 3vw;
@@ -209,8 +216,6 @@ const SectionOne = styled(Container)`
       @media (max-width: ${breakpoints.screenLG}) {
         opacity: 0;
         transform: translateY(130px);
-        animation: ${titleReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1.2s
-          forwards;
       }
     }
   }
