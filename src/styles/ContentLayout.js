@@ -52,7 +52,7 @@ const SectionOne = styled(Container)`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding-top: 90%;
+    padding-top: 86%;
   }
 
   .sun {
