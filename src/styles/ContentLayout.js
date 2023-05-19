@@ -337,6 +337,7 @@ const SectionFour = styled(Container)`
   padding: 0 5vw;
   margin-bottom: 16%;
   color: ${({ theme }) => theme.textPrimary};
+  overflow: hidden;
 
   .section-title {
     margin-bottom: 2.5%;
@@ -355,7 +356,7 @@ const SectionFour = styled(Container)`
 
   .marquee {
     display: flex;
-    animation: ${listMarquee} 35s linear infinite;
+    animation: ${listMarquee} 45s linear infinite;
   }
 
   h2 {
