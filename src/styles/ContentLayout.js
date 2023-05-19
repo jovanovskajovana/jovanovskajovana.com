@@ -104,7 +104,7 @@ const SectionOne = styled(Container)`
 
     @media (max-width: ${breakpoints.screenSM}) {
       top: 16%;
-      width: 86vw;
+      width: 88vw;
     }
   }
 
