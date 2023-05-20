@@ -51,7 +51,19 @@ const HomePage = () => (
 
     <SectionThree column alignItems="flex-start">
       <div className="content">
-        <div className="section-title" data-scroll data-scroll-offset="30%">
+        <div
+          className="section-title hide-sm"
+          data-scroll
+          data-scroll-offset="30%"
+        >
+          <TextXS>Hobby Projects</TextXS>
+        </div>
+
+        <div
+          className="section-title hide-lg"
+          data-scroll
+          data-scroll-offset="15%"
+        >
           <TextXS>Hobby Projects</TextXS>
         </div>
 

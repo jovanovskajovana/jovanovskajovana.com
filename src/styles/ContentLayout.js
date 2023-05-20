@@ -248,7 +248,7 @@ const SectionTwo = styled(Container)`
 
     @media (max-width: ${breakpoints.screenSM}) {
       margin-bottom: 5%;
-      transform: translateY(150px);
+      transform: translateY(120px);
     }
 
     &.is-inview {
@@ -272,7 +272,7 @@ const SectionTwo = styled(Container)`
     @media (max-width: ${breakpoints.screenSM}) {
       flex-direction: column;
       align-items: flex-start;
-      transform: translateY(150px);
+      transform: translateY(120px);
     }
 
     &.is-inview {
@@ -475,12 +475,28 @@ const SectionThree = styled(Container)`
 
     @media (max-width: ${breakpoints.screenSM}) {
       margin-bottom: 10%;
-      transform: translateY(150px);
+      transform: translateY(120px);
     }
 
     &.is-inview {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    &.hide-sm {
+      display: block;
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        display: none;
+      }
+    }
+
+    &.hide-lg {
+      display: none;
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        display: block;
+      }
     }
   }
 
@@ -495,6 +511,10 @@ const SectionThree = styled(Container)`
 
     @media (max-width: ${breakpoints.screenLG}) {
       transform: translateY(150px);
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      transform: translateY(120px);
     }
   }
 
@@ -516,6 +536,7 @@ const SectionThree = styled(Container)`
       font-size: 10.5vw;
       margin-left: 10vw;
       margin-bottom: 12%;
+      transform: translateY(120px);
     }
   }
 
@@ -558,13 +579,10 @@ const SectionFour = styled(Container)`
   .section-title {
     margin-bottom: 2.5%;
 
-    @media (max-width: ${breakpoints.screenLG}) {
-      margin-bottom: 5%;
-    }
-
     @media (max-width: ${breakpoints.screenSM}) {
+      margin-bottom: 5%;
       opacity: 0;
-      transition: opacity 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: opacity 2.5s cubic-bezier(0.19, 1, 0.22, 1);
 
       &.is-inview {
         opacity: 1;
@@ -580,7 +598,7 @@ const SectionFour = styled(Container)`
 
     @media (max-width: ${breakpoints.screenSM}) {
       opacity: 0;
-      transition: opacity 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: opacity 2.5s cubic-bezier(0.19, 1, 0.22, 1);
 
       &.is-inview {
         opacity: 1;
