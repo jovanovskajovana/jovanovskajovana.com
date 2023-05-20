@@ -86,8 +86,8 @@ const SectionOne = styled(Container)`
     height: 12vw;
 
     @media (max-width: ${breakpoints.screenSM}) {
-      width: 22vw;
-      height: 22vw;
+      width: 24vw;
+      height: 24vw;
     }
   }
 
@@ -327,9 +327,8 @@ const SectionTwo = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      line-height: 1.4;
       padding-left: 6vw;
-      padding-bottom: 4%;
+      padding-bottom: 2%;
     }
 
     :before {
@@ -405,7 +404,6 @@ const SectionTwo = styled(Container)`
 
       @media (max-width: ${breakpoints.screenSM}) {
         left: 6vw;
-        bottom: 0.5vw;
         height: 3vw;
       }
     }
