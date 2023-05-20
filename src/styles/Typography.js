@@ -28,7 +28,7 @@ const TitleXL = styled.h2`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    font-size: 8vw;
+    font-size: 9.5vw;
   }
 `
 

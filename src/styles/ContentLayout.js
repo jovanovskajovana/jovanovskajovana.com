@@ -577,14 +577,14 @@ const SectionFour = styled(Container)`
   color: ${({ theme }) => theme.textPrimary};
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding: 0 5vw 18%;
+    padding: 0 5vw 22%;
   }
 
   .section-title {
     margin-bottom: 2.5%;
 
     @media (max-width: ${breakpoints.screenSM}) {
-      margin-bottom: 5%;
+      margin-bottom: 8%;
       opacity: 0;
       transition: opacity 2.5s cubic-bezier(0.19, 1, 0.22, 1);
 
@@ -630,8 +630,8 @@ const SectionFour = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      padding-left: 6vw;
-      padding-right: 8vw;
+      padding-left: 8vw;
+      padding-right: 10vw;
     }
 
     &:before {
@@ -650,8 +650,8 @@ const SectionFour = styled(Container)`
       }
 
       @media (max-width: ${breakpoints.screenSM}) {
-        height: 1.8vw;
-        width: 1.8vw;
+        height: 2vw;
+        width: 2vw;
       }
     }
   }
@@ -692,7 +692,7 @@ const SectionFive = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      margin-bottom: 10%;
+      margin-bottom: 8%;
       transform: translateY(120px);
     }
 
@@ -730,7 +730,7 @@ const SectionFive = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      margin-bottom: 5%;
+      margin-bottom: 3%;
       transform: translateY(120px);
     }
   }
