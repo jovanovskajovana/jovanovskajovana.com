@@ -412,7 +412,7 @@ const SectionThree = styled(Container)`
 
     @media (max-width: ${breakpoints.screenSM}) {
       margin: 0;
-    {
+    }
   }
 
   .link-item {
