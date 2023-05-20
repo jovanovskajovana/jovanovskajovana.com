@@ -292,22 +292,12 @@ const SectionTwo = styled(Container)`
           visibility: hidden;
           will-change: opacity, visibility;
           transition: all 0.1s;
-
-          @media (max-width: ${breakpoints.screenLG}) {
-            opacity: 1;
-            visibility: visible;
-          }
         }
         svg {
           opacity: 1;
           visibility: visible;
           will-change: opacity, visibility;
           transition: all 0.3s;
-
-          @media (max-width: ${breakpoints.screenLG}) {
-            opacity: 0;
-            visibility: hidden;
-          }
         }
       }
     }
