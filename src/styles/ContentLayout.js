@@ -166,7 +166,7 @@ const SectionOne = styled(Container)`
     animation: ${titleReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1.1s forwards;
 
     @media (max-width: ${breakpoints.screenLG}) {
-      transform: translateY(130px);
+      transform: translateY(150px);
     }
   }
 
@@ -177,7 +177,7 @@ const SectionOne = styled(Container)`
 
     @media (max-width: ${breakpoints.screenLG}) {
       opacity: 0;
-      transform: translateY(130px);
+      transform: translateY(150px);
       animation: ${titleReveal} 1.8s cubic-bezier(0.19, 1, 0.22, 1) 1.2s
         forwards;
     }
@@ -219,7 +219,7 @@ const SectionOne = styled(Container)`
 
       @media (max-width: ${breakpoints.screenLG}) {
         opacity: 0;
-        transform: translateY(130px);
+        transform: translateY(150px);
       }
     }
   }
@@ -230,7 +230,31 @@ const SectionTwo = styled(Container)`
   color: ${({ theme }) => theme.textPrimary};
 
   @media (max-width: ${breakpoints.screenLG}) {
-    padding: 0 5vw 16%;
+    padding: 0 5vw 12%;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    padding: 0 5vw 18%;
+  }
+
+  .section-title {
+    margin-bottom: 2.5%;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      transform: translateY(200px);
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      margin-bottom: 5%;
+    }
+
+    &.is-inview {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .content {
@@ -240,6 +264,10 @@ const SectionTwo = styled(Container)`
     opacity: 0;
     transform: translateY(22vh);
     transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      transform: translateY(200px);
+    }
 
     @media (max-width: ${breakpoints.screenSM}) {
       flex-direction: column;
@@ -283,22 +311,6 @@ const SectionTwo = styled(Container)`
           }
         }
       }
-    }
-  }
-
-  .section-title {
-    margin-bottom: 2.5%;
-    opacity: 0;
-    transform: translateY(20vh);
-    transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
-
-    @media (max-width: ${breakpoints.screenSM}) {
-      margin-bottom: 5%;
-    }
-
-    &.is-inview {
-      opacity: 1;
-      transform: translateY(0);
     }
   }
 
@@ -397,6 +409,10 @@ const SectionThree = styled(Container)`
   .content {
     max-width: 100%;
     margin: auto;
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      margin: 0;
+    {
   }
 
   .link-item {
@@ -422,6 +438,14 @@ const SectionThree = styled(Container)`
     transform: translateY(20vh);
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 
+    @media (max-width: ${breakpoints.screenLG}) {
+      transform: translateY(200px);
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      margin-bottom: 10%;
+    }
+
     &.is-inview {
       opacity: 1;
       transform: translateY(0);
@@ -436,6 +460,10 @@ const SectionThree = styled(Container)`
     transform: translateY(20vh);
     will-change: opacity, transform;
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      transform: translateY(200px);
+    }
   }
 
   h1 {
@@ -446,6 +474,17 @@ const SectionThree = styled(Container)`
     transform: translateY(20vh);
     will-change: opacity, transform;
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      margin-left: 6vw;
+      transform: translateY(200px);
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      font-size: 11vw;
+      margin-left: 10vw;
+      margin-bottom: 12%;
+    }
   }
 
   .links.is-inview {

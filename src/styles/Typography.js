@@ -71,6 +71,11 @@ const TextM = styled.p`
   font-family: ${({ theme }) => theme.fontPrimary};
 
   @media (max-width: ${breakpoints.screenLG}) {
+    font-size: 2.5vw;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    font-size: 4vw;
   }
 `
 
