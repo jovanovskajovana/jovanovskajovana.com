@@ -248,6 +248,7 @@ const SectionTwo = styled(Container)`
 
     @media (max-width: ${breakpoints.screenSM}) {
       margin-bottom: 5%;
+      transform: translateY(150px);
     }
 
     &.is-inview {
@@ -271,6 +272,7 @@ const SectionTwo = styled(Container)`
     @media (max-width: ${breakpoints.screenSM}) {
       flex-direction: column;
       align-items: flex-start;
+      transform: translateY(150px);
     }
 
     &.is-inview {
@@ -472,8 +474,8 @@ const SectionThree = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      transform: translateY(150px);
       margin-bottom: 10%;
+      transform: translateY(150px);
     }
 
     &.is-inview {
@@ -492,7 +494,7 @@ const SectionThree = styled(Container)`
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 
     @media (max-width: ${breakpoints.screenLG}) {
-      transform: translateY(200px);
+      transform: translateY(150px);
     }
   }
 
@@ -507,7 +509,7 @@ const SectionThree = styled(Container)`
 
     @media (max-width: ${breakpoints.screenLG}) {
       margin-left: 6vw;
-      transform: translateY(200px);
+      transform: translateY(150px);
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
