@@ -64,11 +64,11 @@ const HomePage = () => (
     </SectionThree>
 
     <SectionFour column alignItems="flex-start">
-      <div className="section-title">
+      <div className="section-title" data-scroll data-scroll-offset="25%">
         <TextXS>What Did I Work On</TextXS>
       </div>
 
-      <div className="content">
+      <div className="content" data-scroll data-scroll-offset="25%">
         <ListMarquee />
         <ListMarquee />
       </div>
@@ -94,7 +94,7 @@ const HomePage = () => (
       </div>
     </SectionFive>
 
-    <SectionSix alignItems="space-between" justifyContent="flex-start">
+    {/* <SectionSix alignItems="space-between" justifyContent="flex-start">
       <div className="video-wrapper" data-scroll data-scroll-offset="45%">
         <TitleXXL>Who</TitleXXL>
         <TitleXXL>Am I</TitleXXL>
@@ -123,14 +123,14 @@ const HomePage = () => (
         </div>
         <Social />
       </div>
-    </SectionSix>
+    </SectionSix> */}
 
-    <SectionSeven column data-scroll data-scroll-offset="20%">
+    {/* <SectionSeven column data-scroll data-scroll-offset="20%">
       <TitleXL>
         Say <a href="mailto:hello@jovanovskajovana.com">Hello</a>
       </TitleXL>
       <TextL>Question or new idea? Let's talk!</TextL>
-    </SectionSeven>
+    </SectionSeven> */}
   </>
 )
 

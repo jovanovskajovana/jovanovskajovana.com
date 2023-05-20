@@ -24,6 +24,11 @@ const TitleXL = styled.h2`
   font-family: ${({ theme }) => theme.fontPrimary};
 
   @media (max-width: ${breakpoints.screenLG}) {
+    font-size: 6vw;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    font-size: 8vw;
   }
 `
 

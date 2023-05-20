@@ -336,7 +336,7 @@ const SectionTwo = styled(Container)`
       }
 
       @media (max-width: ${breakpoints.screenSM}) {
-        top: 5vw;
+        top: 5.25vw;
         height: 2vw;
         width: 2vw;
       }
@@ -424,16 +424,15 @@ const SectionTwo = styled(Container)`
 `
 
 const SectionThree = styled(Container)`
-  padding: 0 5vw;
-  margin-bottom: 12%;
+  padding: 0 5vw 12%;
   color: ${({ theme }) => theme.textPrimary};
 
   @media (max-width: ${breakpoints.screenLG}) {
-    margin-bottom: 16%;
+    padding: 0 5vw 16%;
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    margin-bottom: 18%;
+    padding: 0 5vw 18%;
   }
 
   .content {
@@ -473,6 +472,7 @@ const SectionThree = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
+      transform: translateY(150px);
       margin-bottom: 10%;
     }
 
@@ -555,6 +555,19 @@ const SectionFour = styled(Container)`
 
   .section-title {
     margin-bottom: 2.5%;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      margin-bottom: 5%;
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      opacity: 0;
+      transition: opacity 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+      &.is-inview {
+        opacity: 1;
+      }
+    }
   }
 
   .content {
@@ -562,6 +575,15 @@ const SectionFour = styled(Container)`
     flex-wrap: nowrap;
     white-space: nowrap;
     min-width: 100%;
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      opacity: 0;
+      transition: opacity 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+      &.is-inview {
+        opacity: 1;
+      }
+    }
 
     &:hover .marquee {
       animation-play-state: paused;
@@ -578,6 +600,16 @@ const SectionFour = styled(Container)`
     padding-left: 3vw;
     padding-right: 5vw;
 
+    @media (max-width: ${breakpoints.screenLG}) {
+      padding-left: 4vw;
+      padding-right: 6vw;
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      padding-left: 6vw;
+      padding-right: 8vw;
+    }
+
     &:before {
       position: absolute;
       content: '';
@@ -586,6 +618,17 @@ const SectionFour = styled(Container)`
       height: 0.8vw;
       width: 0.8vw;
       background-color: ${({ theme }) => theme.textPrimary};
+
+      @media (max-width: ${breakpoints.screenLG}) {
+        top: calc(50% - 0.6vw);
+        height: 1.4vw;
+        width: 1.4vw;
+      }
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        height: 1.8vw;
+        width: 1.8vw;
+      }
     }
   }
 `
