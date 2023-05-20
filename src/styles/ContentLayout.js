@@ -230,7 +230,7 @@ const SectionTwo = styled(Container)`
   color: ${({ theme }) => theme.textPrimary};
 
   @media (max-width: ${breakpoints.screenLG}) {
-    padding: 0 5vw 12%;
+    padding: 0 5vw 16%;
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
@@ -327,8 +327,9 @@ const SectionTwo = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
+      line-height: 1.4;
       padding-left: 6vw;
-      padding-bottom: 2%;
+      padding-bottom: 4%;
     }
 
     :before {
@@ -385,6 +386,28 @@ const SectionTwo = styled(Container)`
       visibility: hidden;
       will-change: opacity, visibility;
       transition: all 0.1s;
+
+      &.hide-lg {
+        display: none;
+      }
+
+      @media (max-width: ${breakpoints.screenLG}) {
+        left: 2vw;
+
+        &.hide-lg {
+          display: block;
+        }
+
+        &.hide-md {
+          display: none;
+        }
+      }
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        left: 6vw;
+        bottom: 0.5vw;
+        height: 3vw;
+      }
     }
 
     &:nth-child(2),
@@ -396,6 +419,18 @@ const SectionTwo = styled(Container)`
         visibility: visible;
         will-change: opacity, visibility, transform;
         transition: opacity 0.1s, visibility 0.1s, transform 1s ease 0.2s;
+
+        @media (max-width: ${breakpoints.screenLG}) {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      svg {
+        @media (max-width: ${breakpoints.screenLG}) {
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
   }
@@ -405,6 +440,14 @@ const SectionThree = styled(Container)`
   padding: 0 5vw;
   margin-bottom: 12%;
   color: ${({ theme }) => theme.textPrimary};
+
+  @media (max-width: ${breakpoints.screenLG}) {
+    margin-bottom: 16%;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    margin-bottom: 18%;
+  }
 
   .content {
     max-width: 100%;
