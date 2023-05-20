@@ -50,6 +50,11 @@ const TitleM = styled.h3`
   font-family: ${({ theme }) => theme.fontPrimary};
 
   @media (max-width: ${breakpoints.screenLG}) {
+    font-size: 3.2vw;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    font-size: 5vw;
   }
 `
 

@@ -434,7 +434,7 @@ const SectionThree = styled(Container)`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding: 0 5vw 18%;
+    padding: 0 5vw 20%;
   }
 
   .content {
@@ -576,6 +576,10 @@ const SectionFour = styled(Container)`
   padding: 0 5vw 16%;
   color: ${({ theme }) => theme.textPrimary};
 
+  @media (max-width: ${breakpoints.screenSM}) {
+    padding: 0 5vw 18%;
+  }
+
   .section-title {
     margin-bottom: 2.5%;
 
@@ -657,8 +661,24 @@ const SectionFive = styled(Container)`
   padding: 0 5vw 8%;
   color: ${({ theme }) => theme.textPrimary};
 
+  @media (max-width: ${breakpoints.screenLG}) {
+    padding: 0 5vw 16%;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    padding: 0 5vw 18%;
+  }
+
   .content {
     width: 40%;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      width: 50%;
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      width: 100%;
+    }
   }
 
   .section-title {
@@ -666,6 +686,31 @@ const SectionFive = styled(Container)`
     opacity: 0;
     transform: translateY(20vh);
     transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      transform: translateY(200px);
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      margin-bottom: 10%;
+      transform: translateY(120px);
+    }
+
+    &.hide-sm {
+      display: block;
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        display: none;
+      }
+    }
+
+    &.hide-lg {
+      display: none;
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        display: block;
+      }
+    }
 
     &.is-inview {
       opacity: 1;
@@ -679,6 +724,15 @@ const SectionFive = styled(Container)`
     will-change: opacity, transform;
     transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
     margin-bottom: 1.5%;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      transform: translateY(150px);
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      margin-bottom: 5%;
+      transform: translateY(120px);
+    }
   }
 
   .links.is-inview {
