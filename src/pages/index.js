@@ -51,7 +51,7 @@ const HomePage = () => (
 
     <SectionThree column alignItems="flex-start">
       <div className="content">
-        <div className="section-title" data-scroll data-scroll-offset="25%">
+        <div className="section-title" data-scroll data-scroll-offset="30%">
           <TextXS>Hobby Projects</TextXS>
         </div>
 
@@ -63,7 +63,7 @@ const HomePage = () => (
       </div>
     </SectionThree>
 
-    {/* <SectionFour column alignItems="flex-start">
+    <SectionFour column alignItems="flex-start">
       <div className="section-title">
         <TextXS>What Did I Work On</TextXS>
       </div>
@@ -72,7 +72,7 @@ const HomePage = () => (
         <ListMarquee />
         <ListMarquee />
       </div>
-    </SectionFour> */}
+    </SectionFour>
 
     {/* <SectionFive column alignItems="flex-end">
       <div className="content">

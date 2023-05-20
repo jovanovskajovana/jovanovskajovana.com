@@ -481,7 +481,7 @@ const SectionThree = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      font-size: 11vw;
+      font-size: 10.5vw;
       margin-left: 10vw;
       margin-bottom: 12%;
     }
