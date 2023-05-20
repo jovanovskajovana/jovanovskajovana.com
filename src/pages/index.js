@@ -74,7 +74,7 @@ const HomePage = () => (
       </div>
     </SectionFour>
 
-    {/* <SectionFive column alignItems="flex-end">
+    <SectionFive column alignItems="flex-end">
       <div className="content">
         <div className="section-title" data-scroll data-scroll-offset="30%">
           <TextXS>Plus Some Writing</TextXS>
@@ -92,9 +92,9 @@ const HomePage = () => (
           ))}
         </div>
       </div>
-    </SectionFive> */}
+    </SectionFive>
 
-    {/* <SectionSix alignItems="space-between" justifyContent="flex-start">
+    <SectionSix alignItems="space-between" justifyContent="flex-start">
       <div className="video-wrapper" data-scroll data-scroll-offset="45%">
         <TitleXXL>Who</TitleXXL>
         <TitleXXL>Am I</TitleXXL>
@@ -123,14 +123,14 @@ const HomePage = () => (
         </div>
         <Social />
       </div>
-    </SectionSix> */}
+    </SectionSix>
 
-    {/* <SectionSeven column data-scroll data-scroll-offset="20%">
+    <SectionSeven column data-scroll data-scroll-offset="20%">
       <TitleXL>
         Say <a href="mailto:hello@jovanovskajovana.com">Hello</a>
       </TitleXL>
       <TextL>Question or new idea? Let's talk!</TextL>
-    </SectionSeven> */}
+    </SectionSeven>
   </>
 )
 

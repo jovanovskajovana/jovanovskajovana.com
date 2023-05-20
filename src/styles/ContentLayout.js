@@ -53,7 +53,7 @@ const SectionOne = styled(Container)`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding-top: 92%;
+    padding-top: 90%;
     padding-bottom: 0;
     margin-bottom: 20%;
   }
@@ -75,7 +75,6 @@ const SectionOne = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      top: 10%;
       width: 100vw;
       height: 80vw;
     }
@@ -106,7 +105,7 @@ const SectionOne = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      top: 14%;
+      top: 15%;
       width: 88vw;
     }
   }
