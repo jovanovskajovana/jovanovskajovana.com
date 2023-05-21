@@ -15,7 +15,7 @@ const FooterLayout = styled.div`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding: 8% 5vw;
+    padding: 10% 5vw;
   }
 
   .copy {

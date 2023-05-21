@@ -769,7 +769,7 @@ const SectionSix = styled(Container)`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding: 8% 5vw 28%;
+    padding: 8% 5vw 30%;
   }
 
   .video-wrapper {
