@@ -40,6 +40,7 @@ const TitleL = styled.h3`
   font-family: ${({ theme }) => theme.fontSecondary};
 
   @media (max-width: ${breakpoints.screenLG}) {
+    font-size: 3.6vw;
   }
 `
 

@@ -243,7 +243,7 @@ const SectionTwo = styled(Container)`
     transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
 
     @media (max-width: ${breakpoints.screenLG}) {
-      transform: translateY(200px);
+      transform: translateY(150px);
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
@@ -266,7 +266,7 @@ const SectionTwo = styled(Container)`
     transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
 
     @media (max-width: ${breakpoints.screenLG}) {
-      transform: translateY(200px);
+      transform: translateY(150px);
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
@@ -470,7 +470,7 @@ const SectionThree = styled(Container)`
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 
     @media (max-width: ${breakpoints.screenLG}) {
-      transform: translateY(200px);
+      transform: translateY(150px);
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
@@ -486,7 +486,7 @@ const SectionThree = styled(Container)`
     &.hide-sm {
       display: block;
 
-      @media (max-width: ${breakpoints.screenSM}) {
+      @media (max-width: ${breakpoints.screenLG}) {
         display: none;
       }
     }
@@ -494,7 +494,7 @@ const SectionThree = styled(Container)`
     &.hide-lg {
       display: none;
 
-      @media (max-width: ${breakpoints.screenSM}) {
+      @media (max-width: ${breakpoints.screenLG}) {
         display: block;
       }
     }
@@ -688,7 +688,7 @@ const SectionFive = styled(Container)`
     transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
 
     @media (max-width: ${breakpoints.screenLG}) {
-      transform: translateY(200px);
+      transform: translateY(150px);
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
@@ -699,7 +699,7 @@ const SectionFive = styled(Container)`
     &.hide-sm {
       display: block;
 
-      @media (max-width: ${breakpoints.screenSM}) {
+      @media (max-width: ${breakpoints.screenLG}) {
         display: none;
       }
     }
@@ -707,7 +707,7 @@ const SectionFive = styled(Container)`
     &.hide-lg {
       display: none;
 
-      @media (max-width: ${breakpoints.screenSM}) {
+      @media (max-width: ${breakpoints.screenLG}) {
         display: block;
       }
     }
@@ -763,8 +763,26 @@ const SectionSix = styled(Container)`
   padding: 8% 5vw 16%;
   color: ${({ theme }) => theme.textPrimary};
 
+  @media (max-width: ${breakpoints.screenLG}) {
+    flex-direction: column;
+    padding: 8% 5vw 20%;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    padding: 8% 5vw 22%;
+  }
+
   .video-wrapper {
     position: relative;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      width: 100%;
+    }
 
     &.is-inview {
       video {
@@ -818,9 +836,21 @@ const SectionSix = styled(Container)`
     flex-direction: column;
     padding: 9.5% 6.5vw 0 12vw;
 
+    @media (max-width: ${breakpoints.screenLG}) {
+      width: 80%;
+      padding: 9.5% 0 0;
+      margin: 0 auto;
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      width: 100%;
+      padding: 9.5% 0 0;
+    }
+
     &.is-inview {
       h2,
-      h3 {
+      h3,
+      .link {
         opacity: 1;
         transform: translateY(0);
       }
@@ -834,14 +864,32 @@ const SectionSix = styled(Container)`
     transform: translateY(-20vh);
     transition: all 1s ease 0.1s;
 
+    @media (max-width: ${breakpoints.screenLG}) {
+      font-size: 12vw;
+      transform: translateY(150px);
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      font-size: 15vw;
+      transform: translateY(120px);
+    }
+
     &:nth-child(1) {
       top: -0.65em;
       right: -0.68em;
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        right: 0;
+      }
     }
 
     &:nth-child(2) {
       top: 0.4em;
       right: -0.35em;
+
+      @media (max-width: ${breakpoints.screenSM}) {
+        right: 0;
+      }
     }
   }
 
@@ -852,6 +900,10 @@ const SectionSix = styled(Container)`
     will-change: opacity, transform;
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
     white-space: nowrap;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      transform: translateY(120px);
+    }
   }
 
   h3 {
@@ -859,13 +911,24 @@ const SectionSix = styled(Container)`
     transform: translateY(20vh);
     will-change: opacity, transform;
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      transform: translateY(120px);
+    }
   }
 `
 
 const SectionSeven = styled(Container)`
-  padding: 0 5vw;
-  margin-bottom: 13%;
+  padding: 0 5vw 13%;
   color: ${({ theme }) => theme.textPrimary};
+
+  @media (max-width: ${breakpoints.screenLG}) {
+    padding: 0 5vw 20%;
+  }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    padding: 0 5vw 22%;
+  }
 
   &.is-inview {
     h2,

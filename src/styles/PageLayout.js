@@ -48,14 +48,36 @@ const SocialWrapper = styled.div`
   margin-top: auto;
   margin-left: auto;
 
+  @media (max-width: ${breakpoints.screenLG}) {
+    gap: 3.4vw;
+    margin-top: 8%;
+    margin-left: 0;
+  }
+
   .link {
     display: flex;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      opacity: 0;
+      transform: translateY(120px);
+      will-change: opacity, transform;
+      transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+      transition-delay: 0.4s;
+    }
   }
 
   span {
     position: relative;
     font-size: 1.05vw;
     line-height: 1.8;
+
+    @media (max-width: ${breakpoints.screenLG}) {
+      font-size: 2.5vw;
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      font-size: 3.5vw;
+    }
 
     :after {
       position: absolute;
