@@ -18,6 +18,18 @@ const ListWithImage = ({ item }) => {
     })
   }, [isHovering])
 
+  const handleHoverIn = () => {
+    if (window.innerWidth > 992) {
+      setIsHovering(true)
+    }
+  }
+
+  const handleHoverOut = () => {
+    if (window.innerWidth > 992) {
+      setIsHovering(false)
+    }
+  }
+
   return (
     <div className="link-item">
       <TextM>{item.id}</TextM>
@@ -25,8 +37,8 @@ const ListWithImage = ({ item }) => {
         href={item.url}
         target="_blank"
         ref={linkRef}
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
+        onMouseEnter={handleHoverIn}
+        onMouseLeave={handleHoverOut}
       >
         <TitleXXL>
           <a href={item.url} target="_blank">
