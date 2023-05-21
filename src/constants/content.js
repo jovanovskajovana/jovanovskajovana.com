@@ -52,7 +52,7 @@ export const hobby = [
   {
     id: '04',
     title: 'Andrea Iris',
-    url: 'https://colorized.mk/',
+    url: 'https://andreairis.netlify.app/',
     img: `${linkImg4}`,
   },
   {
