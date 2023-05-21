@@ -29,14 +29,25 @@ const SEO = ({ children, description, image, location }) => {
       <meta name="description" content={site.siteMetadata.description} />
       <title>{site.siteMetadata.title}</title>
 
-      <meta property="og:title" content={site.siteMetadata.title} key="ogtitle" />
+      <meta
+        property="og:title"
+        content={site.siteMetadata.title}
+        key="ogtitle"
+      />
       <meta property="og:description" content={description} key="ogdesc" />
-      <meta propery="og:site_name" content={site.siteMetadata.title} key="ogsitename" />
+      <meta
+        propery="og:site_name"
+        content={site.siteMetadata.title}
+        key="ogsitename"
+      />
       {/* <meta property="og:image" content={image || imgHero} /> */}
       {location && <meta property="og:url" content={location.href} />}
 
       <meta name="twitter:title" content={site.siteMetadata.title} />
-      <meta name="twitter:description" content={site.siteMetadata.description} />
+      <meta
+        name="twitter:description"
+        content={site.siteMetadata.description}
+      />
       <meta name="twitter:site_name" content={site.siteMetadata.title} />
       {/* <meta name="twitter:image" content={image || imgHero} /> */}
       <meta name="twitter:creator" content={site.siteMetadata.author} />

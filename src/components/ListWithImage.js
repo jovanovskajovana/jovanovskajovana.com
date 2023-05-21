@@ -36,7 +36,9 @@ const ListWithImage = ({ item }) => {
         <div
           className="floating-img"
           style={{
-            transform: `translate(${x - linkPosition.left}px, ${y - linkPosition.top}px)`,
+            transform: `translate(${x - linkPosition.left}px, ${
+              y - linkPosition.top
+            }px)`,
           }}
         >
           <div

@@ -23,7 +23,11 @@ const Page = ({ children }) => {
       <ThemeProvider theme={theme}>
         <SEO />
         <Cursor />
-        <LocomotiveScrollProvider options={{ smooth: true }} watch={[]} containerRef={containerRef}>
+        <LocomotiveScrollProvider
+          options={{ smooth: true }}
+          watch={[]}
+          containerRef={containerRef}
+        >
           <main data-scroll-container ref={containerRef}>
             <PageLayout data-scroll-section>
               <Header />

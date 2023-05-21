@@ -611,6 +611,10 @@ const SectionFour = styled(Container)`
 
     &:hover .marquee {
       animation-play-state: paused;
+
+      @media (max-width: ${breakpoints.screenLG}) {
+        animation-play-state: running;
+      }
     }
   }
 
