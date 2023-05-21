@@ -42,6 +42,10 @@ const TitleL = styled.h3`
   @media (max-width: ${breakpoints.screenLG}) {
     font-size: 3.6vw;
   }
+
+  @media (max-width: ${breakpoints.screenSM}) {
+    font-size: 6.2vw;
+  }
 `
 
 const TitleM = styled.h3`

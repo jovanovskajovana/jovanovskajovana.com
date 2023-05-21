@@ -54,6 +54,11 @@ const SocialWrapper = styled.div`
     margin-left: 0;
   }
 
+  @media (max-width: ${breakpoints.screenSM}) {
+    margin-top: 10%;
+    gap: 6.4vw;
+  }
+
   .link {
     display: flex;
 

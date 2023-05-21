@@ -769,7 +769,7 @@ const SectionSix = styled(Container)`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding: 8% 5vw 22%;
+    padding: 8% 5vw 28%;
   }
 
   .video-wrapper {
@@ -870,7 +870,7 @@ const SectionSix = styled(Container)`
     }
 
     @media (max-width: ${breakpoints.screenSM}) {
-      font-size: 15vw;
+      font-size: 16vw;
       transform: translateY(120px);
     }
 
@@ -902,7 +902,13 @@ const SectionSix = styled(Container)`
     white-space: nowrap;
 
     @media (max-width: ${breakpoints.screenLG}) {
+      margin-bottom: 4%;
       transform: translateY(120px);
+    }
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      font-size: 11vw;
+      white-space: normal;
     }
   }
 
@@ -927,7 +933,7 @@ const SectionSeven = styled(Container)`
   }
 
   @media (max-width: ${breakpoints.screenSM}) {
-    padding: 0 5vw 22%;
+    padding: 0 5vw 26%;
   }
 
   &.is-inview {
@@ -975,6 +981,10 @@ const SectionSeven = styled(Container)`
     transform: scale(1.2);
     transform-origin: bottom;
     transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+
+    @media (max-width: ${breakpoints.screenSM}) {
+      font-size: 5vw;
+    }
   }
 `
 
