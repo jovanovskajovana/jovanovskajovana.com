@@ -1,3 +1,3 @@
 # jovanovskajovana.com
 
-Personal website, cv, and other things..
+A personal website, portfolio, and more...
