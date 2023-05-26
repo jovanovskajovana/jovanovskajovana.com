@@ -46,7 +46,7 @@ export const hobby = [
   {
     id: '03',
     title: 'Lana Sos',
-    url: 'https://lana-sos.webflow.io/',
+    url: 'https://lana-sos.com/',
     img: `${linkImg3}`,
   },
   {
