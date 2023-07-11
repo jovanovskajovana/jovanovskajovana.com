@@ -77,6 +77,10 @@ export const work = [
     url: 'https://mintandsquare.com/',
   },
   {
+    title: 'LLoveFoundation',
+    url: 'https://llovefoundation.org/',
+  },
+  {
     title: 'Archie',
     url: 'https://archie.finance/',
   },
@@ -103,10 +107,6 @@ export const work = [
   {
     title: 'SerenaStore',
     url: 'https://www.sbyserena.com/',
-  },
-  {
-    title: 'BitsOfBali',
-    url: 'https://www.bitsofbali.com/',
   },
   {
     title: 'Shoobs',

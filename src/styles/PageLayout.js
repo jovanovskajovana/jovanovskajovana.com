@@ -28,8 +28,8 @@ const Cursor = styled.div`
   z-index: 10;
 
   .pointer {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 1vw;
+    height: 1vw;
     background-color: ${({ theme }) => theme.backgroundDark};
     border-radius: 100%;
     transition: transform 0.2s linear;

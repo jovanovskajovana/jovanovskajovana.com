@@ -27,7 +27,7 @@ const CursorPosition = () => {
         className="pointer"
         style={{
           opacity: isHovering ? 0.8 : 1,
-          transform: `scale(${isHovering ? 2.6 : 1})`,
+          transform: `scale(${isHovering ? 4 : 1})`,
         }}
       />
     </Cursor>
