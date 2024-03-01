@@ -85,6 +85,10 @@ export const work = [
     url: 'https://www.santosestate.com/',
   },
   {
+    title: 'Reemina',
+    url: 'https://www.reemina.com/',
+  },
+  {
     title: 'Archie',
     url: 'https://archie.finance/',
   },
