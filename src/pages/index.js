@@ -93,7 +93,7 @@ const HomePage = () => (
           data-scroll
           data-scroll-offset="30%"
         >
-          <TextXS>Plus Some Writing</TextXS>
+          <TextXS>Design Systems & Some Writing</TextXS>
         </div>
 
         <div
@@ -101,7 +101,7 @@ const HomePage = () => (
           data-scroll
           data-scroll-offset="15%"
         >
-          <TextXS>Plus Some Writing</TextXS>
+          <TextXS>Design Systems & Some Writing</TextXS>
         </div>
 
         <div className="links" data-scroll data-scroll-offset="30%">

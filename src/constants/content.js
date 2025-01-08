@@ -10,15 +10,14 @@ export const skills = [
   'TypeScript',
   'State management',
   'Server-Side Rendering',
-  'GraphQL & Apollo Client',
-  'REST',
-  'Gatsby.js',
+  'GraphQL',
   'Next.js',
+  'Gatsby.js',
   'React Native',
   'HTML(5)',
   'CSS(3)',
   'SASS, LESS',
-  'jQuery',
+  'Custom Shopify Themes',
   'Webflow',
   'Git version control',
   'Project management',
@@ -26,7 +25,7 @@ export const skills = [
   'Graphic design',
   'Computer animation',
   'UX / UI',
-  'Figma, Sketch design tools',
+  'Figma',
   'Zeplin, InVision, Marvel prototyping tools',
 ]
 
@@ -89,12 +88,20 @@ export const work = [
     url: 'https://www.reemina.com/',
   },
   {
-    title: 'Archie',
-    url: 'https://archie.finance/',
+    title: 'Praiskon Hacienda',
+    url: 'https://hkpraiskon.com/',
+  },
+  {
+    title: 'Resore',
+    url: 'https://www.resore.com/',
   },
   {
     title: 'GlobaliD',
     url: 'https://global.id/',
+  },
+  {
+    title: 'Archie',
+    url: 'https://archie.finance/',
   },
   {
     title: 'Specto',
@@ -123,6 +130,18 @@ export const work = [
 ]
 
 export const writing = [
+  {
+    title: 'GiD Design System',
+    url: 'https://globalid.gitlab.io/common/design-system',
+  },
+  {
+    title: 'GiD Forms',
+    url: 'https://globalid.github.io/web-apps/?path=/story/forms--page',
+  },
+  {
+    title: 'Archie Design System',
+    url: 'https://archie-design-system.netlify.app',
+  },
   {
     title: 'React Styleguides',
     url: 'https://github.com/jovanovskajovana/styleguides/tree/master/react',

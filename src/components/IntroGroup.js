@@ -48,7 +48,7 @@ const IntroGroup = () => (
         </div>
         <div className="subtitle" data-scroll data-scroll-offset="25%">
           <TextS>
-            With about 8 years of practical experience and six years full-time
+            With about 12 years of practical experience and nine years full-time
             member of brilliant teams, developing projects for clients around
             the world and Silicon Valley tech companies. Working with colors and
             creating a pixel perfect UI is my greatest love as long as the code

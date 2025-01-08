@@ -620,7 +620,7 @@ const SectionFour = styled(Container)`
 
   .marquee {
     display: flex;
-    animation: ${listMarquee} 45s linear infinite;
+    animation: ${listMarquee} 95s linear infinite;
   }
 
   h2 {
@@ -758,6 +758,15 @@ const SectionFive = styled(Container)`
       }
       &:nth-child(5) {
         transition-delay: 0.5s;
+      }
+      &:nth-child(6) {
+        transition-delay: 0.6s;
+      }
+      &:nth-child(7) {
+        transition-delay: 0.7s;
+      }
+      &:nth-child(8) {
+        transition-delay: 0.8s;
       }
     }
   }
