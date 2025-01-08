@@ -225,8 +225,8 @@ const SectionOne = styled(Container)`
 `
 
 const SectionTwo = styled(Container)`
-  padding: 0 5vw 16% 5.5vw;
   color: ${({ theme }) => theme.textPrimary};
+  padding: 0 5vw 16% 5.5vw;
 
   @media (max-width: ${breakpoints.screenLG}) {
     padding: 0 5vw 16%;
@@ -286,9 +286,9 @@ const SectionTwo = styled(Container)`
 
     &:hover {
       p:nth-child(2),
-      p:nth-child(12),
-      p:nth-child(19),
-      p:nth-child(21) {
+      p:nth-child(11),
+      p:nth-child(18),
+      p:nth-child(20) {
         &:after {
           opacity: 0;
           visibility: hidden;
@@ -400,9 +400,9 @@ const SectionTwo = styled(Container)`
     }
 
     &:nth-child(2),
-    &:nth-child(12),
-    &:nth-child(19),
-    &:nth-child(21) {
+    &:nth-child(11),
+    &:nth-child(18),
+    &:nth-child(20) {
       &:after {
         opacity: 1;
         visibility: visible;
